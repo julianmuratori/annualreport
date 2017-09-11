@@ -7,10 +7,14 @@ const babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
+const notify = require('gulp-notify');
 
 gulp.task('styles', () => {
   return gulp.src('./dev/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({}).on('error', function(err) {
+          return notify().write(err);
+      }))
+    // .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./public/styles'))
@@ -19,7 +23,7 @@ gulp.task('styles', () => {
 
 gulp.task('browser-sync', () => {
   browserSync.init({
-    server: '.'  
+    server: '.'
   })
 });
 
