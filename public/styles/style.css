@@ -175,6 +175,9 @@ body {
 .spanBold {
   font-weight: 700; }
 
+.lightBlueSpan {
+  color: #a9ebeb; }
+
 .cursive {
   font-family: "Droid Serif", serif; }
 
@@ -196,6 +199,9 @@ h1 {
 
 h2 {
   font-size: 38px; }
+
+h3 {
+  font-size: 26px; }
 
 h5 {
   font-size: 20px; }
@@ -219,15 +225,16 @@ h5 {
   text-decoration: none;
   padding: 10px 35px;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px black; }
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 22px; }
 
 .innerWrapper {
   width: 50%;
-  max-width: 980px;
+  max-width: 767px;
   margin: 0 auto; }
 
 .outerWrapper {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto; }
 
 .hero {
@@ -328,7 +335,10 @@ h5 {
 
 .byTheNumbers-threeCells {
   width: 33%;
-  max-width: 250px; }
+  max-width: 300px; }
+  .byTheNumbers-threeCells p {
+    max-width: 250px;
+    margin: 0 auto; }
   .byTheNumbers-threeCells img {
     max-width: 150px; }
 
@@ -366,6 +376,9 @@ h5 {
     border-bottom: 5px solid #ee3124;
     margin-top: 30px; }
 
+.letterLeft-img {
+  max-width: 400px; }
+
 .signature {
   margin: 20px 0; }
 
@@ -374,10 +387,12 @@ h5 {
 
 .financialSummary {
   background: #003a5d;
-  padding: 50px 0;
+  padding: 70px 0;
   color: white; }
   .financialSummary .financialSummary-header {
     margin-bottom: 40px; }
+  .financialSummary h3 {
+    margin-bottom: 10px; }
   .financialSummary .financialSummary-containerPadding {
     border-bottom: 2px solid #ee3124;
     padding: 10px 0 20px;
@@ -385,14 +400,24 @@ h5 {
     .financialSummary .financialSummary-containerPadding .middleCell {
       border-right: 2px solid #ee3124;
       border-left: 2px solid #ee3124; }
+    .financialSummary .financialSummary-containerPadding .leftCell {
+      border-right: 2px solid #ee3124; }
+    .financialSummary .financialSummary-containerPadding .rightCell {
+      border-left: 2px solid #ee3124; }
   .financialSummary .borderLeft {
     border-left: 2px solid #ee3124; }
   .financialSummary .financialSummary-buttonContainer {
-    margin-top: 30px; }
+    margin-top: 50px; }
     .financialSummary .financialSummary-buttonContainer p {
       margin-top: 15px; }
   .financialSummary .financialSummary-twoCells {
     width: 50%; }
+    .financialSummary .financialSummary-twoCells p {
+      max-width: 200px;
+      margin: 0 auto; }
+
+.financialSummary-cellPadding {
+  padding: 15px 0; }
 
 .philanthropy-gallery {
   -ms-flex-pack: justify;
