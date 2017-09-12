@@ -163,6 +163,43 @@ img {
 a {
   text-decoration: none; }
 
+body {
+  font-family: "Raleway", sans-serif; }
+
+.blueSpan {
+  color: #003a5d; }
+
+.redSpan {
+  color: #ee3124; }
+
+.spanBold {
+  font-weight: 700; }
+
+.cursive {
+  font-family: "Droid Serif", serif; }
+
+.cursiveBold {
+  font-weight: 700; }
+
+p {
+  font-size: 18px;
+  font-weight: 500; }
+
+.foundationLetter-font p {
+  font-size: 16px; }
+
+h1 {
+  color: #003a5d;
+  margin: 0;
+  font-size: 46px;
+  font-weight: 800; }
+
+h2 {
+  font-size: 38px; }
+
+h5 {
+  font-size: 20px; }
+
 .textRight {
   text-align: right; }
 
@@ -180,16 +217,17 @@ a {
   background: linear-gradient(to bottom, #f02f17 0%, #f6290c 0%, #fae5e3 0%, #ee3224 3%, #ee3224 100%);
   color: white;
   text-decoration: none;
-  padding: 7px 10px;
+  padding: 10px 35px;
   border-radius: 3px;
   box-shadow: 1px 1px 1px 1px black; }
 
 .innerWrapper {
-  width: 980px;
+  width: 50%;
+  max-width: 980px;
   margin: 0 auto; }
 
 .outerWrapper {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .hero {
@@ -200,7 +238,7 @@ a {
 .headlineContainer {
   background: rgba(247, 252, 244, 0.8);
   width: 40%;
-  height: 60%;
+  height: 50%;
   padding: 30px 25px;
   margin-left: 50px;
   max-width: 400px;
@@ -210,12 +248,13 @@ a {
 .headline-main {
   border-top: 3px solid #ee3124;
   border-bottom: 3px solid #ee3124;
-  margin: 20px 0; }
+  margin: 20px 0;
+  padding: 20px 15px; }
 
 .headline-link-container {
   position: absolute;
   bottom: 50px;
-  right: 20px; }
+  right: 25px; }
 
 .headline-link-title {
   margin-bottom: 10px; }
@@ -229,47 +268,75 @@ a {
   text-align: right; }
 
 .belowFold {
-  padding: 50px 0; }
+  padding: 70px 0; }
 
 .belowFold h1 {
   margin: 0 0 0 7px; }
 
-.belowFold .clearfix .textFloat-Right {
-  margin: 5px 0; }
+.wrappedText p {
+  padding-top: 2.5px;
+  color: #ee3124; }
 
 .since1962 {
   background: #003a5d;
   color: white;
-  padding: 50px 0; }
+  padding: 70px 0; }
+
+.since1962-header {
+  text-align: center;
+  position: relative; }
+
+.since1962-header span {
+  position: relative;
+  z-index: 1;
+  background: #003a5d;
+  padding: 0 2px 0 10px; }
+
+.since1962-header:before {
+  background: #ee3124;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0; }
 
 .since1962-narrow {
-  border-top: 2px solid #ee3124;
   border-bottom: 2px solid #ee3124;
-  padding: 25px 0; }
+  padding: 40px 0; }
 
 .since1962-wide {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 40px; }
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 40px;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .byTheNumbers, .philanthropy, .highlights {
   background: linear-gradient(to bottom, rgba(247, 252, 244, 0.8) 0%, rgba(247, 252, 244, 0.8) 100%), url("/public/assets/background.jpg") center center;
   background-size: cover;
-  padding: 50px 0; }
+  padding: 70px 0; }
 
 .byTheNumbers-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+  .byTheNumbers-container h5 {
+    margin-bottom: 10px; }
 
 .byTheNumbers-threeCells {
   width: 33%;
   max-width: 250px; }
+  .byTheNumbers-threeCells img {
+    max-width: 150px; }
 
 .byTheNumbers-twoCells {
   width: 50%;
-  max-width: 250px; }
+  max-width: 200px; }
+  .byTheNumbers-twoCells img {
+    max-width: 150px; }
 
 .foundationLetter {
   padding: 50px 0; }
@@ -282,6 +349,9 @@ a {
 
 .letterLeft, .letterRight {
   width: 40%; }
+
+.letterRight p {
+  margin-bottom: 20px; }
 
 .letterLeft {
   -ms-flex-direction: column;

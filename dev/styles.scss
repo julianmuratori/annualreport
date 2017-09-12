@@ -9,6 +9,8 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 $brandRed: rgb(238, 49, 36);
 $brandBlue: rgb(0, 58, 93);
+$Raleway: 'Raleway', sans-serif;
+$Droid: 'Droid Serif', serif;
 
 img {
   width: 100%;
@@ -17,6 +19,49 @@ img {
 a {
   text-decoration: none;
 }
+
+body {
+  font-family: $Raleway;
+}
+
+    // TYPOGRAPHY
+  .blueSpan {
+    color: $brandBlue;
+  }
+  .redSpan {
+    color: $brandRed;
+  }
+  .spanBold{
+    font-weight: 700;
+  }
+  .cursive {
+    font-family: $Droid;
+  }
+  .cursiveBold {
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .foundationLetter-font p {
+    font-size: 16px;
+  }
+
+  h1 {
+    color: $brandBlue;
+    margin: 0;
+    font-size: 46px;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
 
 // CATCH ALL CLASSES
 
@@ -40,7 +85,7 @@ a {
   background:  linear-gradient(to bottom, rgba(240,47,23,1) 0%, rgba(246,41,12,1) 0%, rgba(250,229,227,1) 0%, rgba(238,50,36,1) 3%, rgba(238,50,36,1) 100%);
   color: white;
   text-decoration: none;
-  padding: 7px 10px;
+  padding: 10px 35px;
   border-radius: 3px;
   box-shadow: 1px 1px 1px 1px black;
 
@@ -49,12 +94,13 @@ a {
 // WRAPPER
 
 .innerWrapper {
-  width: 980px;
+  width: 50%;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 .outerWrapper {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -69,7 +115,7 @@ a {
 .headlineContainer {
   background: rgba(247,252,244,0.8);
   width: 40%;
-  height: 60%;
+  height: 50%;
   padding: 30px 25px;
   margin-left: 50px;
   max-width: 400px;
@@ -81,12 +127,13 @@ a {
   border-top: 3px solid $brandRed;
   border-bottom: 3px solid $brandRed;
   margin: 20px 0;
+  padding: 20px 15px;
 }
 
 .headline-link-container {
   position: absolute;
   bottom: 50px;
-  right: 20px;
+  right: 25px;
 }
 
 .headline-link-title {
@@ -105,15 +152,16 @@ a {
 
     // BELOW FOLD
 .belowFold {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .belowFold h1 {
   margin: 0 0 0 7px;
 }
 
-.belowFold .clearfix .textFloat-Right {
-  margin: 5px 0;
+.wrappedText p {
+  padding-top: 2.5px;
+  color: $brandRed;
 }
 
 
@@ -122,18 +170,43 @@ a {
 .since1962 {
   background: $brandBlue;
   color: white;
-  padding: 50px 0;
+  padding: 70px 0;
+}
+.since1962-header {
+  text-align: center;
+  position: relative;
+}
+.since1962-header span {
+  position: relative;
+  z-index: 1;
+  background: $brandBlue;
+  padding: 0 2px 0 10px;
 }
 
+.since1962-header:before {
+  background: $brandRed;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+  left: 0;
+}
+
+
+
+
 .since1962-narrow {
-  border-top: 2px solid $brandRed;
+  // border-top: 2px solid $brandRed;
   border-bottom: 2px solid $brandRed;
-  padding: 25px 0;
+  padding: 40px 0;
 }
 
 .since1962-wide {
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 40px;
+  align-items: center;
 }
 
 
@@ -142,20 +215,33 @@ a {
   .byTheNumbers, .philanthropy, .highlights {
     background: linear-gradient(to bottom, rgba(247,252,244,0.8) 0%, rgba(247,252,244,0.8) 100%), url('/public/assets/background.jpg') center center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 70px 0;
   }
 
   .byTheNumbers-container {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    h5 {
+      margin-bottom: 10px;
+    }
   }
   .byTheNumbers-threeCells {
     width: 33%;
     max-width: 250px;
+
+    img {
+      max-width: 150px;
+      // margin-bottom: 10px;
+    }
   }
   .byTheNumbers-twoCells {
     width: 50%;
-    max-width: 250px;
+    max-width: 200px;
+
+    img {
+      max-width: 150px;
+    }
   }
 
 
@@ -173,6 +259,9 @@ a {
   }
   .letterLeft, .letterRight {
     width: 40%;
+  }
+  .letterRight p {
+    margin-bottom: 20px;
   }
   .letterLeft {
     flex-direction: column;
