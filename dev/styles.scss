@@ -14,6 +14,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 // CATCH ALL CLASSES
 
 .textRight {
@@ -63,7 +67,7 @@ img {
 }
 
 .headlineContainer {
-  background: rgba(255,255,255,0.6);
+  background: rgba(247,252,244,0.8);
   width: 40%;
   height: 60%;
   padding: 30px 25px;
@@ -135,8 +139,8 @@ img {
 
   // BY THE NUMBERS
 
-  .byTheNumbers {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url('/public/assets/background.jpg') center center;
+  .byTheNumbers, .philanthropy, .highlights {
+    background: linear-gradient(to bottom, rgba(247,252,244,0.8) 0%, rgba(247,252,244,0.8) 100%), url('/public/assets/background.jpg') center center;
     background-size: cover;
     padding: 50px 0;
   }
@@ -157,6 +161,224 @@ img {
 
     // A LETTER FROM THE FOUNDATION
 
+  .foundationLetter {
+    padding: 50px 0;
+
+    .foundationLetter-header {
+      margin-bottom: 50px;
+    }
+  }
+  .letterContainer {
+    justify-content: space-around;
+  }
   .letterLeft, .letterRight {
     width: 40%;
+  }
+  .letterLeft {
+    flex-direction: column;
+    align-items: flex-end;
+
+    .letterLeft-header {
+      width: 100%;
+      margin: 5px 0 30px;
+    }
+    .letterLeft-halfBorder {
+      width: 50%;
+      border-bottom: 5px solid $brandRed;
+      margin-top: 30px;
+    }
+  }
+
+  .signature {
+    margin: 20px 0;
+  }
+  .signature img {
+    width: 50%;
+  }
+
+
+    // FINANCIAL SUMMARY
+
+  .financialSummary {
+    background: $brandBlue;
+    padding: 50px 0;
+    color: white;
+
+    .financialSummary-header {
+      margin-bottom: 40px;
+    }
+    .financialSummary-containerPadding {
+      border-bottom: 2px solid $brandRed;
+      padding: 10px 0 20px;
+      margin-bottom: 20px;
+
+      .middleCell {
+        border-right: 2px solid $brandRed;
+        border-left: 2px solid $brandRed;
+      }
+    }
+    .borderLeft {
+      border-left: 2px solid $brandRed;
+    }
+
+    .financialSummary-buttonContainer {
+      margin-top: 30px;
+
+      p {
+        margin-top: 15px;
+      }
+    }
+    .financialSummary-twoCells {
+      width: 50%;
+    }
+  }
+
+
+    // FACES OF PHILANTHROPY
+
+  .philanthropy-gallery {
+    justify-content: space-between;
+
+    .philanthropy-gallery-cell {
+      margin: 0 5px;
+      width: calc(20% - 10px);
+
+      .philanthropy-gallery-cell-header {
+        margin-bottom: 40px;
+        min-height: 50px;
+      }
+    }
+  }
+  .philanthropy-gallery-background {
+    height: 200px;
+    width: 100%;
+  }
+  .philanthropy-gallery-background.background1 {
+    background: url('/public/assets/tina.jpg') center center;
+    background-size: cover;
+  }
+  .philanthropy-gallery-background.background2 {
+    background: url('/public/assets/wolkin.jpg') center center;
+    background-size: cover;
+  }
+  .philanthropy-gallery-background.background3 {
+    background: url('/public/assets/shael.jpg') center center;
+    background-size: cover;
+  }
+  .philanthropy-gallery-background.background4 {
+    background: url('/public/assets/koby.jpg') center center;
+    background-size: cover;
+  }
+  .philanthropy-gallery-background.background5 {
+    background: url('/public/assets/greenberg.jpg') top center;
+    background-size: cover;
+  }
+
+  .philanthropy-footer {
+    margin-top: 30px;
+  }
+  .philanthropy-footer-buttonContainer {
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+  }
+  .philanthropy-footer-text {
+    width: 20%;
+    border-top: 5px solid $brandRed;
+    padding: 15px 5px 0;
+  }
+  .philanthropyButton {
+    padding: 7px 55px;
+  }
+
+      // THE IMPACT
+
+    .impact {
+      padding: 30px 0;
+    }
+
+    .impact-header {
+      margin-bottom: 30px;
+    }
+
+    .impactCell {
+      width: 50%;
+      padding: 0 5px;
+      margin-bottom: 30px;
+
+      .impactCell-img {
+        height: 250px;
+        background: url('https://placehold.it/512x250') no-repeat;
+      }
+      .impactCell-header {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 3px solid $brandRed;
+      }
+    }
+    .impact-button-container {
+      margin-top: 30px;
+    }
+    .impact-button-text {
+      margin-top: 30px;
+    }
+
+    // HIGHLIGHTS OF THE YEAR
+
+  .highlights-container {
+    flex-wrap: wrap;
+
+    .highlights-cell {
+      width: 50%;
+      margin-bottom: 40px;
+
+      a:hover .highlights-readmore {
+        background: url('http://unsplash.it/400/250') no-repeat;
+      }
+
+      h2 {
+        margin-top: 15px;
+        display: inline-block;
+        padding-top: 7px;
+        border-top: 3px solid $brandRed;
+      }
+
+    }
+    .highlights-readmore {
+      height: 250px;
+      background: url('https://lorempixel.com/400/250') no-repeat;
+    }
+  }
+
+
+    // A MESSAGE FROM THE CHAIR
+
+  .boardMessage {
+    background: $brandBlue;
+    padding: 40px 0 50px;
+  }
+
+  .boardMessage-header {
+    padding: 20px 0 40px;
+  }
+
+  .boardMessage-container {
+    justify-content: space-around;
+  }
+  .boardMessage-container div {
+    width: 40%;
+  }
+  .boardMessage-text {
+    flex-wrap: wrap;
+  }
+  .boardMessage-signature {
+    margin-top: 20px;
+  }
+
+
+  // PRE-FOOTER
+  .pre-footer div {
+    width: 50%;
+    margin: 40px 0;
   }

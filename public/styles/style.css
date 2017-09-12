@@ -160,6 +160,9 @@ summary {
 img {
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 .textRight {
   text-align: right; }
 
@@ -195,7 +198,7 @@ img {
   height: 100vh; }
 
 .headlineContainer {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(247, 252, 244, 0.8);
   width: 40%;
   height: 60%;
   padding: 30px 25px;
@@ -249,8 +252,8 @@ img {
       justify-content: space-around;
   margin-top: 40px; }
 
-.byTheNumbers {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url("/public/assets/background.jpg") center center;
+.byTheNumbers, .philanthropy, .highlights {
+  background: linear-gradient(to bottom, rgba(247, 252, 244, 0.8) 0%, rgba(247, 252, 244, 0.8) 100%), url("/public/assets/background.jpg") center center;
   background-size: cover;
   padding: 50px 0; }
 
@@ -268,5 +271,174 @@ img {
   width: 50%;
   max-width: 250px; }
 
+.foundationLetter {
+  padding: 50px 0; }
+  .foundationLetter .foundationLetter-header {
+    margin-bottom: 50px; }
+
+.letterContainer {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .letterLeft, .letterRight {
   width: 40%; }
+
+.letterLeft {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end; }
+  .letterLeft .letterLeft-header {
+    width: 100%;
+    margin: 5px 0 30px; }
+  .letterLeft .letterLeft-halfBorder {
+    width: 50%;
+    border-bottom: 5px solid #ee3124;
+    margin-top: 30px; }
+
+.signature {
+  margin: 20px 0; }
+
+.signature img {
+  width: 50%; }
+
+.financialSummary {
+  background: #003a5d;
+  padding: 50px 0;
+  color: white; }
+  .financialSummary .financialSummary-header {
+    margin-bottom: 40px; }
+  .financialSummary .financialSummary-containerPadding {
+    border-bottom: 2px solid #ee3124;
+    padding: 10px 0 20px;
+    margin-bottom: 20px; }
+    .financialSummary .financialSummary-containerPadding .middleCell {
+      border-right: 2px solid #ee3124;
+      border-left: 2px solid #ee3124; }
+  .financialSummary .borderLeft {
+    border-left: 2px solid #ee3124; }
+  .financialSummary .financialSummary-buttonContainer {
+    margin-top: 30px; }
+    .financialSummary .financialSummary-buttonContainer p {
+      margin-top: 15px; }
+  .financialSummary .financialSummary-twoCells {
+    width: 50%; }
+
+.philanthropy-gallery {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .philanthropy-gallery .philanthropy-gallery-cell {
+    margin: 0 5px;
+    width: calc(20% - 10px); }
+    .philanthropy-gallery .philanthropy-gallery-cell .philanthropy-gallery-cell-header {
+      margin-bottom: 40px;
+      min-height: 50px; }
+
+.philanthropy-gallery-background {
+  height: 200px;
+  width: 100%; }
+
+.philanthropy-gallery-background.background1 {
+  background: url("/public/assets/tina.jpg") center center;
+  background-size: cover; }
+
+.philanthropy-gallery-background.background2 {
+  background: url("/public/assets/wolkin.jpg") center center;
+  background-size: cover; }
+
+.philanthropy-gallery-background.background3 {
+  background: url("/public/assets/shael.jpg") center center;
+  background-size: cover; }
+
+.philanthropy-gallery-background.background4 {
+  background: url("/public/assets/koby.jpg") center center;
+  background-size: cover; }
+
+.philanthropy-gallery-background.background5 {
+  background: url("/public/assets/greenberg.jpg") top center;
+  background-size: cover; }
+
+.philanthropy-footer {
+  margin-top: 30px; }
+
+.philanthropy-footer-buttonContainer {
+  width: 80%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  padding-right: 40px; }
+
+.philanthropy-footer-text {
+  width: 20%;
+  border-top: 5px solid #ee3124;
+  padding: 15px 5px 0; }
+
+.philanthropyButton {
+  padding: 7px 55px; }
+
+.impact {
+  padding: 30px 0; }
+
+.impact-header {
+  margin-bottom: 30px; }
+
+.impactCell {
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 30px; }
+  .impactCell .impactCell-img {
+    height: 250px;
+    background: url("https://placehold.it/512x250") no-repeat; }
+  .impactCell .impactCell-header {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 3px solid #ee3124; }
+
+.impact-button-container {
+  margin-top: 30px; }
+
+.impact-button-text {
+  margin-top: 30px; }
+
+.highlights-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .highlights-container .highlights-cell {
+    width: 50%;
+    margin-bottom: 40px; }
+    .highlights-container .highlights-cell a:hover .highlights-readmore {
+      background: url("http://unsplash.it/400/250") no-repeat; }
+    .highlights-container .highlights-cell h2 {
+      margin-top: 15px;
+      display: inline-block;
+      padding-top: 7px;
+      border-top: 3px solid #ee3124; }
+  .highlights-container .highlights-readmore {
+    height: 250px;
+    background: url("https://lorempixel.com/400/250") no-repeat; }
+
+.boardMessage {
+  background: #003a5d;
+  padding: 40px 0 50px; }
+
+.boardMessage-header {
+  padding: 20px 0 40px; }
+
+.boardMessage-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.boardMessage-container div {
+  width: 40%; }
+
+.boardMessage-text {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.boardMessage-signature {
+  margin-top: 20px; }
+
+.pre-footer div {
+  width: 50%;
+  margin: 40px 0; }
