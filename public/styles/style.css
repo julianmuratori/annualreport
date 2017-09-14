@@ -184,6 +184,12 @@ body {
 .cursiveBold {
   font-weight: 700; }
 
+.noBold {
+  font-weight: normal; }
+
+.bold {
+  font-weight: 700; }
+
 p {
   font-size: 18px;
   font-weight: 500; }
@@ -191,10 +197,13 @@ p {
 .foundationLetter-font p {
   font-size: 16px; }
 
+.bigH1 h1 {
+  font-size: 58px; }
+
 h1 {
   color: #003a5d;
   margin: 0;
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 800; }
 
 h2 {
@@ -203,8 +212,14 @@ h2 {
 h3 {
   font-size: 26px; }
 
+h4 {
+  font-size: 24px; }
+
 h5 {
   font-size: 20px; }
+
+h6 {
+  font-size: 16px; }
 
 .textRight {
   text-align: right; }
@@ -220,13 +235,16 @@ h5 {
   display: flex; }
 
 .standardButton {
-  background: linear-gradient(to bottom, #f02f17 0%, #f6290c 0%, #fae5e3 0%, #ee3224 3%, #ee3224 100%);
+  background: #ee3124;
   color: white;
   text-decoration: none;
   padding: 10px 35px;
   border-radius: 3px;
   box-shadow: 1px 1px 1px 1px black;
-  font-size: 22px; }
+  font-size: 22px;
+  transition: background .3s; }
+  .standardButton:hover {
+    background: #003a5d; }
 
 .innerWrapper {
   width: 50%;
@@ -234,7 +252,11 @@ h5 {
   margin: 0 auto; }
 
 .outerWrapper {
-  max-width: 1024px;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.philanthropyWrapper {
+  max-width: 1250px;
   margin: 0 auto; }
 
 .hero {
@@ -244,10 +266,9 @@ h5 {
 
 .headlineContainer {
   background: rgba(247, 252, 244, 0.8);
-  width: 40%;
   height: 50%;
   padding: 30px 25px;
-  margin-left: 50px;
+  margin: 0 250px;
   max-width: 400px;
   max-height: 550px;
   position: relative; }
@@ -282,7 +303,12 @@ h5 {
 
 .wrappedText p {
   padding-top: 2.5px;
-  color: #ee3124; }
+  color: #ee3124;
+  transform: translateY(5px);
+  line-height: 1.15; }
+
+.bigH1 {
+  line-height: 1; }
 
 .since1962 {
   background: #003a5d;
@@ -419,14 +445,19 @@ h5 {
 .financialSummary-cellPadding {
   padding: 15px 0; }
 
+.philanthropy-header {
+  margin-bottom: 30px; }
+
 .philanthropy-gallery {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .philanthropy-gallery .philanthropy-gallery-cell {
     margin: 0 5px;
-    width: calc(20% - 10px); }
+    width: calc(20% - 10px);
+    max-width: 200px; }
     .philanthropy-gallery .philanthropy-gallery-cell .philanthropy-gallery-cell-header {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
+      padding-top: 10px;
       min-height: 50px; }
 
 .philanthropy-gallery-background {
@@ -460,58 +491,107 @@ h5 {
   width: 80%;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  padding-right: 40px; }
+  position: relative; }
+  .philanthropy-footer-buttonContainer h6, .philanthropy-footer-buttonContainer a {
+    margin-left: auto; }
+  .philanthropy-footer-buttonContainer p {
+    margin-top: auto; }
 
 .philanthropy-footer-text {
   width: 20%;
   border-top: 5px solid #ee3124;
-  padding: 15px 5px 0; }
+  padding: 15px 5px 0;
+  max-width: 200px;
+  margin-left: auto; }
 
 .philanthropyButton {
-  padding: 7px 55px; }
+  padding: 7px 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 300px;
+  margin-right: 40px; }
 
 .impact {
-  padding: 30px 0; }
+  padding: 50px 0; }
 
 .impact-header {
   margin-bottom: 30px; }
+  .impact-header h1 {
+    margin-bottom: 20px; }
 
 .impactCell {
   width: 50%;
   padding: 0 5px;
   margin-bottom: 30px; }
-  .impactCell .impactCell-img {
+  .impactCell .impactCell-img1 {
     height: 250px;
-    background: url("https://placehold.it/512x250") no-repeat; }
+    background: url("/public/assets/impact-left.jpg") no-repeat top center;
+    background-size: cover; }
+  .impactCell .impactCell-img2 {
+    height: 250px;
+    background: url("/public/assets/impact-right.jpg") top center no-repeat;
+    background-size: cover; }
   .impactCell .impactCell-header {
-    margin-top: 20px;
+    margin: 20px 0;
     padding-top: 10px;
-    border-top: 3px solid #ee3124; }
+    border-top: 3px solid #ee3124;
+    display: inline-block; }
+  .impactCell .impactCell-body {
+    padding-right: 50px;
+    min-height: 100px;
+    margin-bottom: 20px; }
+
+.impact-button {
+  display: inline-block;
+  margin: 30px 0; }
 
 .impact-button-container {
   margin-top: 30px; }
 
-.impact-button-text {
-  margin-top: 30px; }
-
 .highlights-container {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+  .highlights-container .highlights-cell-h5 {
+    margin-top: 15px;
+    display: inline-block;
+    padding-top: 7px;
+    border-top: 3px solid #ee3124; }
   .highlights-container .highlights-cell {
-    width: 50%;
-    margin-bottom: 40px; }
-    .highlights-container .highlights-cell a:hover .highlights-readmore {
-      background: url("http://unsplash.it/400/250") no-repeat; }
-    .highlights-container .highlights-cell h2 {
-      margin-top: 15px;
-      display: inline-block;
-      padding-top: 7px;
-      border-top: 3px solid #ee3124; }
-  .highlights-container .highlights-readmore {
-    height: 250px;
-    background: url("https://lorempixel.com/400/250") no-repeat; }
+    width: calc(50% - 10px);
+    margin: 10px 5px 40px;
+    max-width: 400px; }
+    .highlights-container .highlights-cell .highlights-readmore1 {
+      background: url("/public/assets/legacy-gift.jpg") no-repeat top center; }
+    .highlights-container .highlights-cell .highlights-readmore2 {
+      background: url("/public/assets/teen-philanthropy.jpg") no-repeat; }
+    .highlights-container .highlights-cell .highlights-readmore3 {
+      background: url("/public/assets/book-of-life.jpg") no-repeat; }
+    .highlights-container .highlights-cell .highlights-readmore4 {
+      background: url("/public/assets/educational-seminars.jpg") no-repeat; }
+    .highlights-container .highlights-cell .highlights-readmore {
+      height: 250px;
+      background-size: cover; }
+
+.highlights-hover {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all .1s ease-in;
+  color: white; }
+  .highlights-hover .highlights-cell-h5 {
+    border-top: none; }
+
+a:hover .highlights-hover {
+  opacity: 1; }
 
 .boardMessage {
   background: #003a5d;
@@ -519,6 +599,10 @@ h5 {
 
 .boardMessage-header {
   padding: 20px 0 40px; }
+  .boardMessage-header div {
+    display: inline-block;
+    text-align: left;
+    padding-right: 30px; }
 
 .boardMessage-container {
   -ms-flex-pack: distribute;
@@ -530,10 +614,25 @@ h5 {
 .boardMessage-text {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .boardMessage-text p {
+    margin-bottom: 20px; }
+  .boardMessage-text p {
+    color: white; }
 
 .boardMessage-signature {
   margin-top: 20px; }
+  .boardMessage-signature p {
+    margin-bottom: 5px; }
+  .boardMessage-signature:nth-of-type(1) {
+    margin-right: 30px; }
 
-.pre-footer div {
-  width: 50%;
-  margin: 40px 0; }
+.preFooter-left, .preFooter-right {
+  margin: 40px 0;
+  width: 50%; }
+
+.preFooter-left div {
+  margin: 40px 0;
+  max-width: 350px; }
+
+.partners {
+  padding: 0 300px; }
