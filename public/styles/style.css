@@ -247,7 +247,7 @@ h6 {
     background: #003a5d; }
 
 .innerWrapper {
-  width: 50%;
+  width: 70%;
   max-width: 767px;
   margin: 0 auto; }
 
@@ -260,9 +260,10 @@ h6 {
   margin: 0 auto; }
 
 .hero {
-  background: url("/public/assets/Family_Photo.jpg") center right;
+  background: url("../assets/Family_Photo1.jpg") center right;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  transition: height 999999s; }
 
 .headlineContainer {
   background: rgba(247, 252, 244, 0.8);
@@ -347,7 +348,7 @@ h6 {
       align-items: center; }
 
 .byTheNumbers, .philanthropy, .highlights {
-  background: linear-gradient(to bottom, rgba(247, 252, 244, 0.8) 0%, rgba(247, 252, 244, 0.8) 100%), url("/public/assets/background.jpg") center center;
+  background: linear-gradient(to bottom, rgba(247, 252, 244, 0.8) 0%, rgba(247, 252, 244, 0.8) 100%), url("../assets/background.jpg") center center;
   background-size: cover;
   padding: 70px 0; }
 
@@ -465,23 +466,23 @@ h6 {
   width: 100%; }
 
 .philanthropy-gallery-background.background1 {
-  background: url("/public/assets/tina.jpg") center center;
+  background: url("../assets/tina.jpg") center center;
   background-size: cover; }
 
 .philanthropy-gallery-background.background2 {
-  background: url("/public/assets/wolkin.jpg") center center;
+  background: url("../assets/wolkin.jpg") center center;
   background-size: cover; }
 
 .philanthropy-gallery-background.background3 {
-  background: url("/public/assets/shael.jpg") center center;
+  background: url("../assets/shael.jpg") center center;
   background-size: cover; }
 
 .philanthropy-gallery-background.background4 {
-  background: url("/public/assets/koby.jpg") center center;
+  background: url("../assets/koby.jpg") center center;
   background-size: cover; }
 
 .philanthropy-gallery-background.background5 {
-  background: url("/public/assets/greenberg.jpg") top center;
+  background: url("../assets/greenberg.jpg") top center;
   background-size: cover; }
 
 .philanthropy-footer {
@@ -525,11 +526,11 @@ h6 {
   margin-bottom: 30px; }
   .impactCell .impactCell-img1 {
     height: 250px;
-    background: url("/public/assets/impact-left.jpg") no-repeat top center;
+    background: url("../assets/impact-left.jpg") no-repeat top center;
     background-size: cover; }
   .impactCell .impactCell-img2 {
     height: 250px;
-    background: url("/public/assets/impact-right.jpg") top center no-repeat;
+    background: url("../assets/impact-right.jpg") top center no-repeat;
     background-size: cover; }
   .impactCell .impactCell-header {
     margin: 20px 0;
@@ -563,13 +564,13 @@ h6 {
     margin: 10px 5px 40px;
     max-width: 400px; }
     .highlights-container .highlights-cell .highlights-readmore1 {
-      background: url("/public/assets/legacy-gift.jpg") no-repeat top center; }
+      background: url("../assets/legacy-gift.jpg") no-repeat top center; }
     .highlights-container .highlights-cell .highlights-readmore2 {
-      background: url("/public/assets/teen-philanthropy.jpg") no-repeat; }
+      background: url("../assets/teen-philanthropy.jpg") no-repeat; }
     .highlights-container .highlights-cell .highlights-readmore3 {
-      background: url("/public/assets/book-of-life.jpg") no-repeat; }
+      background: url("../assets/book-of-life.jpg") no-repeat; }
     .highlights-container .highlights-cell .highlights-readmore4 {
-      background: url("/public/assets/educational-seminars.jpg") no-repeat; }
+      background: url("../assets/educational-seminars.jpg") no-repeat; }
     .highlights-container .highlights-cell .highlights-readmore {
       height: 250px;
       background-size: cover; }
@@ -634,5 +635,180 @@ a:hover .highlights-hover {
   margin: 40px 0;
   max-width: 350px; }
 
-.partners {
-  padding: 0 300px; }
+.partners-gallery {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+
+.partners-gallery-cell {
+  width: calc(16.6% - 10px);
+  margin: 0 5px; }
+
+@media all and (max-width: 1200px) {
+  .headlineContainer {
+    margin: 0 150px; } }
+
+@media all and (max-width: 980px) {
+  .headlineContainer {
+    margin-left: 50px; }
+  .innerWrapper, .outerWrapper, .philanthropyWrapper {
+    width: 95%; }
+  .since1962-wide {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0; }
+    .since1962-wide div {
+      margin-top: 40px;
+      max-width: 600px;
+      min-width: 212px; }
+  .philanthropy-gallery {
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
+  .philanthropy-footer {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .philanthropy-footer-text, .philanthropy-footer-buttonContainer {
+    width: 100%; }
+  .philanthropy-footer-buttonContainer h6, .philanthropy-footer-buttonContainer a {
+    margin: 5px auto; }
+  .philanthropy-footer-text {
+    max-width: 1000px;
+    border-top: none; } }
+
+@media all and (max-width: 767px) {
+  .bigH1 h1 {
+    font-size: 7.5vw; }
+  .bigH1 p {
+    font-size: 3vw;
+    line-height: 1;
+    transform: translateY(0); }
+  .philanthropy-gallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .philanthropy-gallery .philanthropy-gallery-cell {
+    width: calc(33.3% - 10px);
+    max-width: none;
+    margin: 10px 5px; }
+  .boardMessage-header.textRight {
+    text-align: center; }
+  .boardMessage-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .boardMessage-container div {
+      width: 80%; }
+    .boardMessage-container .boardMessage-img {
+      margin-bottom: 20px; } }
+
+@media all and (max-width: 550px) {
+  h1.titleScale {
+    font-size: 12vw; }
+  .standardButton {
+    display: block; }
+  .hero {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: url("../assets/Family-mobile.jpg") center;
+    background-size: cover; }
+  .headlineContainer {
+    margin: 0;
+    padding: 30px 7px;
+    height: auto; }
+  .headline-link-container {
+    position: static;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-left: 15px; }
+    .headline-link-container div {
+      width: 65%; }
+  .bigH1 h1 {
+    font-size: 7.5vw; }
+  .bigH1 p {
+    font-size: 3vw;
+    line-height: 1;
+    transform: translateY(0); }
+  .byTheNumbers-threeCells {
+    width: 50%; }
+  .byTheNumbers-container {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .letterContainer {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    text-align: center; }
+  .letterLeft, .letterRight {
+    width: 100%;
+    margin: 0 auto; }
+  .letterLeft-img {
+    max-width: 100%; }
+  .signature img {
+    max-width: 150px; }
+  .byTheNumbers-container {
+    max-width: 100%;
+    margin: 0 auto; }
+  .financialSummary-containerPadding .rightCell {
+    border-right: 2px solid #ee3124; }
+  .philanthropy-gallery .philanthropy-gallery-cell {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center; }
+  .philanthropy-gallery-background {
+    max-width: 200px;
+    margin: 0 auto; }
+  .impact-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .impactCell {
+    width: calc(100% - 15px);
+    margin: 0 auto 30px; }
+  .impact-button-container {
+    margin-top: 0; }
+  .impactCell .impactCell-body {
+    padding-right: 0; }
+  .highlights-container .highlights-cell {
+    width: calc(100% - 10px); }
+  .highlights-container .highlights-cell .highlights-readmore {
+    background-size: cover;
+    background-position: top; }
+  .boardMessage-header {
+    padding: 20px 10px 40px; }
+    .boardMessage-header div h4 {
+      display: inline; }
+  .boardMessage-text {
+    padding: 0 10px; }
+  .boardMessage-container div {
+    width: 100%; }
+    .boardMessage-container div .boardMessage-signature {
+      width: 50%;
+      display: inline; }
+    .boardMessage-container div .boardMessage-signature:nth-of-type(1) {
+      margin-right: 0; }
+  .partners {
+    padding: 0; }
+  .partners-gallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .partners-gallery-cell {
+    width: calc(33.3% - 10px); }
+  .preFooter-right {
+    display: none; }
+  .preFooter-left {
+    width: 100%;
+    margin: 0; }
+    .preFooter-left div {
+      max-width: none; }
+    .preFooter-left a {
+      font-size: 14px;
+      font-weight: 500; } }
+
+@media all and (max-width: 400px) {
+  .headline-main, .headline-link-container {
+    padding: 0; }
+    .headline-main h1, .headline-link-container h1 {
+      font-size: 38px; } }

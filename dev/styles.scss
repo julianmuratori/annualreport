@@ -1,6 +1,3 @@
-
-@import 'media';
-
 button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:after { visibility: hidden; display: block; font-size: 0; content: ""; clear: both; height: 0;}
@@ -128,7 +125,7 @@ body {
 // WRAPPER
 
 .innerWrapper {
-  width: 50%;
+  width: 70%;
   max-width: 767px;
   margin: 0 auto;
 }
@@ -146,9 +143,10 @@ body {
 // HEADER STYLING
 
 .hero {
-  background: url('/public/assets/Family_Photo.jpg') center right;
+  background: url('../assets/Family_Photo1.jpg') center right;
   background-size: cover;
   height: 100vh;
+  transition: height 999999s;
 }
 
 .headlineContainer {
@@ -258,7 +256,7 @@ body {
   // BY THE NUMBERS
 
   .byTheNumbers, .philanthropy, .highlights {
-    background: linear-gradient(to bottom, rgba(247,252,244,0.8) 0%, rgba(247,252,244,0.8) 100%), url('/public/assets/background.jpg') center center;
+    background: linear-gradient(to bottom, rgba(247,252,244,0.8) 0%, rgba(247,252,244,0.8) 100%), url('../assets/background.jpg') center center;
     background-size: cover;
     padding: 70px 0;
   }
@@ -417,23 +415,23 @@ body {
     width: 100%;
   }
   .philanthropy-gallery-background.background1 {
-    background: url('/public/assets/tina.jpg') center center;
+    background: url('../assets/tina.jpg') center center;
     background-size: cover;
   }
   .philanthropy-gallery-background.background2 {
-    background: url('/public/assets/wolkin.jpg') center center;
+    background: url('../assets/wolkin.jpg') center center;
     background-size: cover;
   }
   .philanthropy-gallery-background.background3 {
-    background: url('/public/assets/shael.jpg') center center;
+    background: url('../assets/shael.jpg') center center;
     background-size: cover;
   }
   .philanthropy-gallery-background.background4 {
-    background: url('/public/assets/koby.jpg') center center;
+    background: url('../assets/koby.jpg') center center;
     background-size: cover;
   }
   .philanthropy-gallery-background.background5 {
-    background: url('/public/assets/greenberg.jpg') top center;
+    background: url('../assets/greenberg.jpg') top center;
     background-size: cover;
   }
 
@@ -489,12 +487,12 @@ body {
 
       .impactCell-img1 {
         height: 250px;
-        background: url('/public/assets/impact-left.jpg') no-repeat top center;
+        background: url('../assets/impact-left.jpg') no-repeat top center;
         background-size: cover;
       }
       .impactCell-img2 {
         height: 250px;
-        background: url('/public/assets/impact-right.jpg') top center no-repeat;
+        background: url('../assets/impact-right.jpg') top center no-repeat;
         background-size: cover;
       }
       .impactCell-header {
@@ -546,16 +544,16 @@ body {
       // }
 
     .highlights-readmore1 {
-      background: url('/public/assets/legacy-gift.jpg') no-repeat top center;
+      background: url('../assets/legacy-gift.jpg') no-repeat top center;
     }
     .highlights-readmore2 {
-      background: url('/public/assets/teen-philanthropy.jpg') no-repeat;
+      background: url('../assets/teen-philanthropy.jpg') no-repeat;
     }
     .highlights-readmore3 {
-      background: url('/public/assets/book-of-life.jpg') no-repeat;
+      background: url('../assets/book-of-life.jpg') no-repeat;
     }
     .highlights-readmore4 {
-      background: url('/public/assets/educational-seminars.jpg') no-repeat;
+      background: url('../assets/educational-seminars.jpg') no-repeat;
     }
     .highlights-readmore {
       height: 250px;
@@ -642,5 +640,14 @@ body {
 
   // FOOTER
   .partners {
-    padding: 0 300px;
+    // padding: 0 300px;
   }
+  .partners-gallery {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .partners-gallery-cell {
+    width: calc(16.6% - 10px);
+    margin: 0 5px;
+  }
+  @import 'media';

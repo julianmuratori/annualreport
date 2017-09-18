@@ -1,0 +1,275 @@
+// 1200PX BREAKPOINT
+
+@media all and (max-width: 1200px) {
+
+  // HERO
+  .headlineContainer {
+    margin: 0 150px;
+  }
+
+
+}
+
+// 980PX BREAKPOINT
+
+@media all and (max-width: 980px) {
+
+  // HERO
+  .headlineContainer {
+    margin-left: 50px;
+  }
+
+  // BELOW FOLD
+
+  .innerWrapper, .outerWrapper, .philanthropyWrapper {
+    width: 95%;
+  }
+
+  // SINCE 1962
+  .since1962-wide {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+    div {
+      margin-top: 40px;
+      max-width: 600px;
+      min-width: 212px;
+    }
+  }
+  .philanthropy-gallery {
+    justify-content: space-evenly;
+  }
+  .philanthropy-footer {
+    flex-direction: column;
+  }
+  .philanthropy-footer-text, .philanthropy-footer-buttonContainer {
+    width: 100%;
+  }
+  .philanthropy-footer-buttonContainer h6, .philanthropy-footer-buttonContainer a {
+    margin: 5px auto;
+  }
+  .philanthropy-footer-text {
+    max-width: 1000px;
+    border-top: none;
+  }
+}
+
+// 767PX BREAKPOINT
+
+@media all and (max-width: 767px) {
+  .bigH1 h1 {
+    font-size: 7.5vw;
+
+  }
+  .bigH1 p {
+    font-size: 3vw;
+    line-height: 1;
+    transform: translateY(0);
+  }
+  // FACES OF PHILANTHROPY
+  .philanthropy-gallery {
+    flex-wrap: wrap;
+  }
+  .philanthropy-gallery .philanthropy-gallery-cell {
+    width: calc(33.3% - 10px);
+    max-width: none;
+    margin: 10px 5px;
+  }
+
+  // LETTER FROM THE CEO
+  .boardMessage-header.textRight {
+    text-align: center;
+  }
+
+  .boardMessage-container {
+    flex-wrap: wrap;
+
+    div {
+      width: 80%;
+    }
+
+    .boardMessage-img {
+      margin-bottom: 20px;
+    }
+    .boardMessage-text {
+    }
+  }
+}
+
+
+// 550px BREAKPOINT
+
+@media all and (max-width: 550px) {
+
+  h1.titleScale {
+    font-size: 12vw;
+  }
+  .standardButton {
+    display: block;
+  }
+
+  // HERO
+  .hero {
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/Family-mobile.jpg') center ;
+    background-size: cover;
+  }
+  .headlineContainer {
+    margin: 0;
+    padding: 30px 7px;
+    height: auto;
+  }
+  .headline-link-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    div {
+      width: 65%;
+      // text-align: center;
+    }
+  }
+
+  // BELOW FOLD
+  .bigH1 h1 {
+    font-size: 7.5vw;
+
+  }
+  .bigH1 p {
+    font-size: 3vw;
+    line-height: 1;
+    transform: translateY(0);
+  }
+
+  // 2016-17 BY THE NUMBERS
+  .byTheNumbers-threeCells {
+    width: 50%;
+  }
+  .byTheNumbers-container {
+    justify-content: center;
+  }
+
+  // LETTER FROM THE FOUNDATION
+  .letterContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .letterLeft, .letterRight {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .letterLeft-img {
+    max-width: 100%;
+  }
+  .signature img {
+    max-width: 150px;
+  }
+
+  // FINANACIAL SUMMARY
+  .byTheNumbers-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .financialSummary-containerPadding .rightCell {
+    border-right: 2px solid $brandRed;
+  }
+
+  // FACES OF PHILANTHROPY
+
+  .philanthropy-gallery .philanthropy-gallery-cell {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .philanthropy-gallery-background {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .impact-body {
+    flex-wrap: wrap;
+  }
+  .impactCell {
+    width: calc(100% - 15px);
+    margin: 0 auto 30px;
+  }
+  .impact-button-container {
+    margin-top: 0;
+  }
+  .impactCell .impactCell-body {
+    padding-right: 0;
+  }
+
+  // HIGHLIGHTS OF THE YEAR
+  .highlights-container .highlights-cell {
+    width: calc(100% - 10px);
+  }
+  .highlights-container .highlights-cell .highlights-readmore {
+    background-size: cover;
+    background-position: top;
+  }
+
+  // LETTER FROM THE CEO
+  .boardMessage-header {
+    padding: 20px 10px 40px;
+
+    div h4 {
+      display: inline;
+    }
+  }
+  .boardMessage-text {
+    padding: 0 10px;
+  }
+  .boardMessage-container div {
+    width: 100%;
+
+    .boardMessage-signature {
+      width: 50%;
+      display: inline;
+    }
+    .boardMessage-signature:nth-of-type(1) {
+      margin-right: 0;
+    }
+  }
+
+  // STRATEGIC PARTNERS
+  .partners {
+    padding: 0;
+  }
+  .partners-gallery {
+    flex-wrap: wrap;
+  }
+  .partners-gallery-cell {
+    width: calc(33.3% - 10px);
+  }
+  .preFooter-right {
+    display: none;
+  }
+  .preFooter-left {
+    width: 100%;
+    margin: 0;
+    div {
+      max-width: none;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+// BELOW 350px
+
+  @media all and (max-width: 400px) {
+    .headline-main, .headline-link-container {
+      padding: 0;
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+  }

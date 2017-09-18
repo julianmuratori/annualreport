@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Annual Report</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="public/styles/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i,700i|Raleway:400,500,800" rel="stylesheet">
+	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 
 	<!-- HEADER -->
 
 	<header>
-		<div class="hero">
+		<div class="hero flex">
 			<div class="headlineContainer">
 				<div>
 					<p>Philanthropy for a Strong Jewish Future</p>
@@ -28,7 +28,7 @@
 						<p class="redSpan">ANNUAL REPORT</p>
 					</div>
 					<div class="headline-link">
-						<a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<a href="#two"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 
 	<!-- START OF MAIN -->
 	<main>
-		<section class="textRight belowFold">
+		<section id="two" class="textRight belowFold">
 			<div class="innerWrapper bigH1">
 				<div><h1>LIFE</h1></div>
 				<div><h1>IS BUILT</h1></div>
@@ -176,12 +176,12 @@
 							<p class="cursiveBold">happiness.""</p>
 						</div>
 						<div class="signature">
-							<img src="/public/assets/David_signature.png" alt="">
+							<img src="./public/assets/David_signature.png" alt="">
 							<p>DAVID MATLOW</p>
 							<p>CHAIR, JEWISH FOUNDATION</p>
 						</div>
 						<div class="signature">
-							<img src="/public/assets/ronit_signature.png" alt="">
+							<img src="./public/assets/ronit_signature.png" alt="">
 							<p>RONIT HOLTZMAN</p>
 							<p>V.P., PLANNED GIVING & ENDOWMENTS</p>
 						</div>
@@ -247,7 +247,7 @@
 			<section class="philanthropy">
 				<div class="philanthropyWrapper">
 					<div class="textCenter philanthropy-header">
-						<h1>FACES OF PHILANTHROPY</h1>
+						<h1 class="titleScale">FACES OF PHILANTHROPY</h1>
 					</div>
 
 					<div class="philanthropy-gallery flex blueSpan">
@@ -294,10 +294,10 @@
 			<!-- THE IMPACT -->
 			<section class="impact">
 				<div class="impact-header textCenter innerWrapper">
-					<h1>THE IMPACT</h1>
+					<h1 class="titleScale">THE IMPACT</h1>
 					<h5 class="noBold cursive redSpan">Through the Jewish Foundation, our generous donors support hundreds of charities, projects, and programs each year. <span class="cursiveBold">Here are two examples:</span></h5>
 				</div>
-				<div class="outerWrapper flex">
+				<div class="outerWrapper flex impact-body">
 					<div class="impactCell">
 						<a href=""><div class="impactCell-img1">
 							<div class="highlights-hover"><h5 class="highlights-cell-h5">READ MORE</h5></div>
@@ -332,7 +332,7 @@
 			<!-- HIGHLIGHTS OF THE YEAR -->
 			<section class="highlights">
 				<div class="textCenter outerWrapper">
-					<h1>HIGHLIGHTS OF THE YEAR</h1>
+					<h1 class="titleScale">HIGHLIGHTS OF THE YEAR</h1>
 				</div>
 				<div class="outerWrapper highlights-container flex">
 					<div class="highlights-cell">
@@ -357,14 +357,14 @@
 			<!-- A MESSAGE FROM THE CHAIR -->
 			<section class="boardMessage">
 				<div class="outerWrapper textRight boardMessage-header">
-					<div>
+					<div class="clearfix">
 						<h4 class="cursive redSpan">A message from the Chair of the Board</h4>
 						<h4 class="cursive redSpan"> and the President & CEO of UJA Federation</h4>
 					</div>
 				</div>
 				<div class="boardMessage-container outerWrapper flex">
 					<div class="boardMessage-img">
-						<img src="public/assets/president.jpg" alt="">
+						<img src="./public/assets/president.jpg" alt="">
 					</div>
 					<div class="boardMessage-text flex foundationLetter-font">
 						<p>During this, UJA Federation's Centennial year, we extend a mazel tov to our partner, the Jewish Foundation of Greater Toronto, for its ongoing efforts on behalf of our community's extraordinary and visionary philanthropists, providing the people of Jewish Toronto the opportunity to leave a lasting legacy that will shape the next hundred years.</p>
@@ -393,10 +393,10 @@
 						<p>SHERMAN CAMPUS | 4600 BATHURST ST.</p>
 						<p>TORONTO, ONTARIO M2R3V2</p>
 						<p>P 416.631.5703 F 416.631.5701</p>
-						<p>JEWISHFOUNDATION@UJAFED.ORG</p>
+						<a href="mailto:jewishfoundation@ujafed.org">JEWISHFOUNDATION@UJAFED.ORG</a>
 					</div>
-					<div class="blueSpan">
-						<p>WWW.JEWISHFOUNDATIONTORONTO.COM</p>
+					<div>
+						<a href="https://www.jewishfoundationreport.com" class="blueSpan">JEWISHFOUNDATIONTORONTO.COM</a>
 					</div>
 				</div>
 			<div class="preFooter-right">
@@ -410,15 +410,20 @@
 				<div>
 					<p>STRATEGIC PARTNERS</p>
 				</div>
-				<div>
-					<div><img src="" alt=""></div>
-					<div><img src="" alt=""></div>
-					<div><img src="" alt=""></div>
-					<div><img src="" alt=""></div>
-					<div><img src="" alt=""></div>
-					<div><img src="" alt=""></div>
+				<div class="flex partners-gallery">
+					<div class="partners-gallery-cell"><img src="./public/assets/chadnick.png" alt=""></div>
+					<div class="partners-gallery-cell"><img src="./public/assets/cidel.png" alt=""></div>
+					<div class="partners-gallery-cell"><img src="./public/assets/fabric.png" alt=""></div>
+					<div class="partners-gallery-cell"><img src="./public/assets/israelbond.png" alt=""></div>
+					<div class="partners-gallery-cell"><img src="./public/assets/jewishteen.png" alt=""></div>
+					<div class="partners-gallery-cell"><img src="./public/assets/wow.png" alt=""></div>
 				</div>
 		</div>
 	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="public/script.js" charset="utf-8"></script>
 </body>
 </html>
