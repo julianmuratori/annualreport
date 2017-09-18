@@ -535,6 +535,8 @@ body {
       width: calc(50% - 10px);
       margin: 10px 5px 40px;
       max-width: 400px;
+      position: relative;
+      overflow: hidden;
 
       // h5 {
       //   margin-top: 15px;
@@ -571,6 +573,7 @@ body {
     opacity: 0;
     transition: all .1s ease-in;
     color: white;
+    position: relative;
 
     .highlights-cell-h5 {
       border-top: none;
@@ -580,7 +583,15 @@ body {
     // visibility: visible;
     opacity: 1;
   }
+.light {
+  display: none;
+}
 
+.light.featherlight-inner {
+  display: block;
+  position: static;
+  max-width: 700px;
+}
 
     // A MESSAGE FROM THE CHAIR
 
@@ -641,13 +652,20 @@ body {
   // FOOTER
   .partners {
     // padding: 0 300px;
+    max-width: 1400px;
+    margin: 0 auto 20px;
   }
   .partners-gallery {
     align-items: center;
     justify-content: space-evenly;
+
   }
   .partners-gallery-cell {
     width: calc(16.6% - 10px);
     margin: 0 5px;
+
+    img {
+
+    }
   }
   @import 'media';

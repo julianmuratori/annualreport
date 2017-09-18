@@ -562,7 +562,9 @@ h6 {
   .highlights-container .highlights-cell {
     width: calc(50% - 10px);
     margin: 10px 5px 40px;
-    max-width: 400px; }
+    max-width: 400px;
+    position: relative;
+    overflow: hidden; }
     .highlights-container .highlights-cell .highlights-readmore1 {
       background: url("../assets/legacy-gift.jpg") no-repeat top center; }
     .highlights-container .highlights-cell .highlights-readmore2 {
@@ -587,12 +589,21 @@ h6 {
   background: rgba(255, 255, 255, 0.5);
   opacity: 0;
   transition: all .1s ease-in;
-  color: white; }
+  color: white;
+  position: relative; }
   .highlights-hover .highlights-cell-h5 {
     border-top: none; }
 
 a:hover .highlights-hover {
   opacity: 1; }
+
+.light {
+  display: none; }
+
+.light.featherlight-inner {
+  display: block;
+  position: static;
+  max-width: 700px; }
 
 .boardMessage {
   background: #003a5d;
@@ -634,6 +645,10 @@ a:hover .highlights-hover {
 .preFooter-left div {
   margin: 40px 0;
   max-width: 350px; }
+
+.partners {
+  max-width: 1400px;
+  margin: 0 auto 20px; }
 
 .partners-gallery {
   -ms-flex-align: center;
