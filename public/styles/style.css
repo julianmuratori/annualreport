@@ -198,7 +198,10 @@ p {
   font-size: 16px; }
 
 .bigH1 h1 {
-  font-size: 58px; }
+  font-size: 70px; }
+
+.bigH1 p {
+  font-size: 24px; }
 
 h1 {
   color: #003a5d;
@@ -245,6 +248,14 @@ h6 {
   transition: background .3s; }
   .standardButton:hover {
     background: #003a5d; }
+
+.featherlight .featherlight-content {
+  max-width: 500px;
+  background: #003a5d;
+  color: white; }
+
+.light h6 {
+  margin-top: 10px; }
 
 .innerWrapper {
   width: 70%;
@@ -297,7 +308,9 @@ h6 {
   text-align: right; }
 
 .belowFold {
-  padding: 70px 0; }
+  padding: 70px 0;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .belowFold h1 {
   margin: 0 0 0 7px; }
@@ -310,6 +323,8 @@ h6 {
 
 .bigH1 {
   line-height: 1; }
+  .bigH1 .bigH1-last {
+    max-width: 779px; }
 
 .since1962 {
   background: #003a5d;
@@ -355,8 +370,8 @@ h6 {
 .byTheNumbers-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .byTheNumbers-container h5 {
     margin-bottom: 10px; }
 
@@ -410,7 +425,8 @@ h6 {
   margin: 20px 0; }
 
 .signature img {
-  width: 50%; }
+  width: 50%;
+  max-width: 200px; }
 
 .financialSummary {
   background: #003a5d;
@@ -423,7 +439,7 @@ h6 {
   .financialSummary .financialSummary-containerPadding {
     border-bottom: 2px solid #ee3124;
     padding: 10px 0 20px;
-    margin-bottom: 20px; }
+    margin: 0 auto 20px; }
     .financialSummary .financialSummary-containerPadding .middleCell {
       border-right: 2px solid #ee3124;
       border-left: 2px solid #ee3124; }
@@ -552,8 +568,8 @@ h6 {
 .highlights-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .highlights-container .highlights-cell-h5 {
     margin-top: 15px;
     display: inline-block;
@@ -660,6 +676,10 @@ a:hover .highlights-hover {
   width: calc(16.6% - 10px);
   margin: 0 5px; }
 
+@media all and (min-width: 1600px) {
+  .headlineContainer {
+    margin: 0 380px; } }
+
 @media all and (max-width: 1200px) {
   .headlineContainer {
     margin: 0 150px; } }
@@ -669,6 +689,10 @@ a:hover .highlights-hover {
     margin-left: 50px; }
   .innerWrapper, .outerWrapper, .philanthropyWrapper {
     width: 95%; }
+  .bigH1 {
+    padding: 0 20px; }
+  .bigH1 h1 {
+    font-size: 7.5vw; }
   .since1962-wide {
     -ms-flex-pack: center;
         justify-content: center;
@@ -694,6 +718,8 @@ a:hover .highlights-hover {
     border-top: none; } }
 
 @media all and (max-width: 767px) {
+  .bigH1 {
+    padding: 0; }
   .bigH1 h1 {
     font-size: 7.5vw; }
   .bigH1 p {
@@ -742,10 +768,14 @@ a:hover .highlights-hover {
     padding-left: 15px; }
     .headline-link-container div {
       width: 65%; }
+  .bigH1 {
+    padding-right: 5px; }
   .bigH1 h1 {
-    font-size: 7.5vw; }
+    font-size: 7vw;
+    margin-left: 5px;
+    line-height: 1.2; }
   .bigH1 p {
-    font-size: 3vw;
+    font-size: 3.09vw;
     line-height: 1;
     transform: translateY(0); }
   .byTheNumbers-threeCells {
@@ -786,6 +816,8 @@ a:hover .highlights-hover {
     margin-top: 0; }
   .impactCell .impactCell-body {
     padding-right: 0; }
+  .lion {
+    display: none; }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px); }
   .highlights-container .highlights-cell .highlights-readmore {

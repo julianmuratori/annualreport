@@ -58,7 +58,10 @@ body {
     font-size: 16px;
   }
   .bigH1 h1 {
-    font-size: 58px;
+    font-size: 70px;
+  }
+  .bigH1 p {
+    font-size: 24px;
   }
 
   h1 {
@@ -120,6 +123,17 @@ body {
   background:  $brandBlue;
   }
 
+}
+
+// FEATHERLIGHT
+
+.featherlight .featherlight-content {
+  max-width: 500px;
+  background: $brandBlue;
+  color: white;
+}
+.light h6 {
+  margin-top: 10px;
 }
 
 // WRAPPER
@@ -190,6 +204,7 @@ body {
     // BELOW FOLD
 .belowFold {
   padding: 70px 0;
+  justify-content: center;
 }
 
 .belowFold h1 {
@@ -205,6 +220,10 @@ body {
 
 .bigH1 {
   line-height: 1;
+
+  .bigH1-last {
+    max-width: 779px;
+  }
 }
 
 
@@ -263,7 +282,7 @@ body {
 
   .byTheNumbers-container {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     h5 {
       margin-bottom: 10px;
@@ -333,6 +352,7 @@ body {
   }
   .signature img {
     width: 50%;
+    max-width: 200px;
   }
 
 
@@ -352,7 +372,8 @@ body {
     .financialSummary-containerPadding {
       border-bottom: 2px solid $brandRed;
       padding: 10px 0 20px;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
+
 
       .middleCell {
         border-right: 2px solid $brandRed;
@@ -522,7 +543,7 @@ body {
 
   .highlights-container {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     .highlights-cell-h5 {
       margin-top: 15px;
