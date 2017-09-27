@@ -6,6 +6,12 @@
   }
 }
 
+@media all and (min-width: 981px) and (max-width: 1300px) {
+  .innerWrapper, .outerWrapper, .philanthropyWrapper {
+    padding: 10px;
+  }
+}
+
 // 1200PX BREAKPOINT
 
 @media all and (max-width: 1200px) {
@@ -13,6 +19,13 @@
   // HERO
   .headlineContainer {
     margin: 0 150px;
+  }
+
+  .lion {
+    // display: none;
+    position: static;
+    margin: 0 auto;
+    float: left;
   }
 
 
@@ -133,17 +146,18 @@
     align-items: flex-start;
     background: url('../assets/Family-mobile.jpg') left;
     background-size: cover;
+    position: relative;
   }
   .headlineContainer {
     margin: 0;
-    padding: 15px 7px;
+    padding: 15px 7px 0;
     height: auto;
     width: 100%;
     text-align: center;
-    position: relative;
+    position: static;
 
     .headline-main {
-      padding: 20px 5px;
+      padding: 10px 5px;
     }
 
     h1 {
@@ -160,20 +174,26 @@
     }
   }
   .headline-link-container {
-    // width: 100%;
-    // top: 250px;
-    position: static;
+    position: absolute;
+    max-width: 175px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    // flex-direction: column;
-    // padding-left: 15px;
+    left: 10px;
+    bottom: 200px;
+    // padding: 0px 5px;
+    background: rgba(247, 252, 244, 0.8);
 
     div {
-      width: 65%;
+      // width: 65%;
       // text-align: center;
+    }
+    .headline-link {
+      width: 100%;
     }
     .headline-link-title {
       margin-bottom: 0;
+      padding: 5px 0;
     }
   }
 
@@ -217,6 +237,9 @@
   }
 
   // FINANACIAL SUMMARY
+  .financialSummary-cellPadding {
+    padding: 15px 5px;
+  }
   .byTheNumbers-container {
     max-width: 100%;
     margin: 0 auto;
@@ -240,6 +263,12 @@
   .philanthropy-gallery-cell-header {
     display: inline-block;
   }
+  .philanthropy-footer {
+    flex-direction: column-reverse;
+  }
+  .philanthropy-footer-text {
+    padding: 5px 0 15px;
+  }
   .philanthropy-footer-text p {
     font-size: 15px;
   }
@@ -260,13 +289,11 @@
   .tina {
     // left: 50px;
   }
-  .lion {
-    // display: none;
-    position: static;
-    margin: 0 auto;
-    float: left;
-  }
+
   // HIGHLIGHTS OF THE YEAR
+  .highlights {
+    padding-bottom: 20px;
+  }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px);
   }
@@ -276,6 +303,7 @@
   }
 
   // LETTER FROM THE CEO
+
   .boardMessage-header {
     padding: 20px 10px 40px;
 
@@ -318,6 +346,9 @@
     margin: 0;
     div {
       max-width: none;
+      p {
+        font-size: 17px;
+      }
     }
     a {
       font-size: 14px;

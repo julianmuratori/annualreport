@@ -494,8 +494,7 @@ h6 {
 .lion {
   position: absolute;
   max-width: 75px;
-  left: -75px;
-  bottom: 0px; }
+  left: -75px; }
 
 .philanthropy-gallery-background {
   height: 200px;
@@ -531,8 +530,11 @@ h6 {
   position: relative; }
   .philanthropy-footer-buttonContainer h6, .philanthropy-footer-buttonContainer a {
     margin-left: auto; }
+  .philanthropy-footer-buttonContainer h6 {
+    margin-bottom: 15px; }
   .philanthropy-footer-buttonContainer p {
-    margin-top: auto; }
+    margin-top: auto;
+    font-size: 16px; }
 
 .philanthropy-footer-text {
   width: 20%;
@@ -712,9 +714,17 @@ a:hover .highlights-hover {
   .headlineContainer {
     margin: 0 380px; } }
 
+@media all and (min-width: 981px) and (max-width: 1300px) {
+  .innerWrapper, .outerWrapper, .philanthropyWrapper {
+    padding: 10px; } }
+
 @media all and (max-width: 1200px) {
   .headlineContainer {
-    margin: 0 150px; } }
+    margin: 0 150px; }
+  .lion {
+    position: static;
+    margin: 0 auto;
+    float: left; } }
 
 @media all and (max-width: 980px) {
   .headlineContainer {
@@ -787,16 +797,17 @@ a:hover .highlights-hover {
     -ms-flex-align: start;
         align-items: flex-start;
     background: url("../assets/Family-mobile.jpg") left;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
   .headlineContainer {
     margin: 0;
-    padding: 15px 7px;
+    padding: 15px 7px 0;
     height: auto;
     width: 100%;
     text-align: center;
-    position: relative; }
+    position: static; }
     .headlineContainer .headline-main {
-      padding: 20px 5px; }
+      padding: 10px 5px; }
     .headlineContainer h1 {
       font-size: 36px;
       display: inline-block; }
@@ -805,15 +816,22 @@ a:hover .highlights-hover {
     .headlineContainer h4 {
       font-size: 18px; }
   .headline-link-container {
-    position: static;
+    position: absolute;
+    max-width: 175px;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -ms-flex-align: center;
-        align-items: center; }
-    .headline-link-container div {
-      width: 65%; }
+        align-items: center;
+    left: 10px;
+    bottom: 200px;
+    background: rgba(247, 252, 244, 0.8); }
+    .headline-link-container .headline-link {
+      width: 100%; }
     .headline-link-container .headline-link-title {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding: 5px 0; }
   .bigH1 {
     margin: 0 5px 0 0; }
   .bigH1 h1 {
@@ -840,6 +858,8 @@ a:hover .highlights-hover {
     max-width: 100%; }
   .signature img {
     max-width: 150px; }
+  .financialSummary-cellPadding {
+    padding: 15px 5px; }
   .byTheNumbers-container {
     max-width: 100%;
     margin: 0 auto; }
@@ -854,6 +874,11 @@ a:hover .highlights-hover {
     margin: 0 auto; }
   .philanthropy-gallery-cell-header {
     display: inline-block; }
+  .philanthropy-footer {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+  .philanthropy-footer-text {
+    padding: 5px 0 15px; }
   .philanthropy-footer-text p {
     font-size: 15px; }
   .impact-body {
@@ -866,10 +891,8 @@ a:hover .highlights-hover {
     margin-top: 0; }
   .impactCell .impactCell-body {
     padding-right: 0; }
-  .lion {
-    position: static;
-    margin: 0 auto;
-    float: left; }
+  .highlights {
+    padding-bottom: 20px; }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px); }
   .highlights-container .highlights-cell .highlights-readmore {
@@ -903,6 +926,8 @@ a:hover .highlights-hover {
     margin: 0; }
     .preFooter-left div {
       max-width: none; }
+      .preFooter-left div p {
+        font-size: 17px; }
     .preFooter-left a {
       font-size: 14px;
       font-weight: 500; } }

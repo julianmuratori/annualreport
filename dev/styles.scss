@@ -453,7 +453,7 @@ body {
     position: absolute;
     max-width: 75px;
     left: -75px;
-    bottom: 0px;
+    // bottom: 0px;
   }
   .philanthropy-gallery-background {
     height: 200px;
@@ -492,8 +492,12 @@ body {
     h6, a {
       margin-left: auto;
     }
+    h6 {
+      margin-bottom: 15px;
+    }
     p {
       margin-top: auto;
+      font-size: 16px;
     }
   }
   .philanthropy-footer-text {
