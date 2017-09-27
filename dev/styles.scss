@@ -53,6 +53,10 @@ body {
   p {
     font-size: 18px;
     font-weight: 500;
+    // line-height: 2.5;
+  }
+  .larger-line-height {
+    line-height: 2.3;
   }
   .foundationLetter-font p {
     font-size: 16px;
@@ -62,6 +66,9 @@ body {
   }
   .bigH1 p {
     font-size: 24px;
+  }
+  .philanthropy-gallery-cell h6 {
+    line-height: 1.5;
   }
 
   h1 {
@@ -166,11 +173,11 @@ body {
 .headlineContainer {
   background: rgba(247,252,244,0.8);
   // width: 40%;
-  height: 50%;
-  padding: 30px 25px;
+  // height: 50%;
+  padding: 60px 25px 30px;
   margin: 0 250px;
   // margin-left: 50px;
-  max-width: 400px;
+  // max-width: 400px;
   max-height: 550px;
   position: relative;
 }
@@ -208,14 +215,17 @@ body {
 }
 
 .belowFold h1 {
-  margin: 0 0 0 7px;
+  margin: 0 0 0 15px;
+}
+.belowFold div.clearfix {
+  margin-top: 3px;
 }
 
 .wrappedText p {
   padding-top: 2.5px;
   color: $brandRed;
-  transform: translateY(5px);
-  line-height: 1.15;
+  transform: translateY(-5px);
+  line-height: 1.55;
 }
 
 .bigH1 {
@@ -412,6 +422,7 @@ body {
 
     // FACES OF PHILANTHROPY
 
+
   .philanthropy-header {
     margin-bottom: 30px;
   }
@@ -428,8 +439,21 @@ body {
         margin-bottom: 10px;
         padding-top: 10px;
         min-height: 50px;
+        position: relative;
       }
     }
+  }
+  .tina {
+    position: absolute;
+    max-width: 50px;
+    left: 100px;
+    top: 0;
+  }
+  .lion {
+    position: absolute;
+    max-width: 75px;
+    left: -75px;
+    bottom: 0px;
   }
   .philanthropy-gallery-background {
     height: 200px;
@@ -499,6 +523,9 @@ body {
       h1 {
         margin-bottom: 20px;
       }
+      h5 {
+        line-height: 1.5;
+      }
     }
 
     .impactCell {
@@ -526,6 +553,7 @@ body {
         padding-right: 50px;
         min-height: 100px;
         margin-bottom: 20px;
+        line-height: 1.5;
       }
     }
     .impact-button {
@@ -668,6 +696,18 @@ body {
   .preFooter-left div {
     margin: 40px 0;
     max-width: 350px;
+
+    p {
+      // margin-top: 5px;
+      line-height: 1.5;
+    }
+    a {
+      display: block;
+      margin: 5px 0 0 0;
+    }
+  }
+  .preFooter-left div.blueSpan {
+    max-width: 400px;
   }
 
   // FOOTER
@@ -684,6 +724,7 @@ body {
   .partners-gallery-cell {
     width: calc(16.6% - 10px);
     margin: 0 5px;
+    max-width: 150px;
 
     img {
 

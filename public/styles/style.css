@@ -194,6 +194,9 @@ p {
   font-size: 18px;
   font-weight: 500; }
 
+.larger-line-height {
+  line-height: 2.3; }
+
 .foundationLetter-font p {
   font-size: 16px; }
 
@@ -202,6 +205,9 @@ p {
 
 .bigH1 p {
   font-size: 24px; }
+
+.philanthropy-gallery-cell h6 {
+  line-height: 1.5; }
 
 h1 {
   color: #003a5d;
@@ -278,10 +284,8 @@ h6 {
 
 .headlineContainer {
   background: rgba(247, 252, 244, 0.8);
-  height: 50%;
-  padding: 30px 25px;
+  padding: 60px 25px 30px;
   margin: 0 250px;
-  max-width: 400px;
   max-height: 550px;
   position: relative; }
 
@@ -313,13 +317,16 @@ h6 {
       justify-content: center; }
 
 .belowFold h1 {
-  margin: 0 0 0 7px; }
+  margin: 0 0 0 15px; }
+
+.belowFold div.clearfix {
+  margin-top: 3px; }
 
 .wrappedText p {
   padding-top: 2.5px;
   color: #ee3124;
-  transform: translateY(5px);
-  line-height: 1.15; }
+  transform: translateY(-5px);
+  line-height: 1.55; }
 
 .bigH1 {
   line-height: 1; }
@@ -475,7 +482,20 @@ h6 {
     .philanthropy-gallery .philanthropy-gallery-cell .philanthropy-gallery-cell-header {
       margin-bottom: 10px;
       padding-top: 10px;
-      min-height: 50px; }
+      min-height: 50px;
+      position: relative; }
+
+.tina {
+  position: absolute;
+  max-width: 50px;
+  left: 100px;
+  top: 0; }
+
+.lion {
+  position: absolute;
+  max-width: 75px;
+  left: -75px;
+  bottom: 0px; }
 
 .philanthropy-gallery-background {
   height: 200px;
@@ -535,6 +555,8 @@ h6 {
   margin-bottom: 30px; }
   .impact-header h1 {
     margin-bottom: 20px; }
+  .impact-header h5 {
+    line-height: 1.5; }
 
 .impactCell {
   width: 50%;
@@ -556,7 +578,8 @@ h6 {
   .impactCell .impactCell-body {
     padding-right: 50px;
     min-height: 100px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.5; }
 
 .impact-button {
   display: inline-block;
@@ -661,6 +684,14 @@ a:hover .highlights-hover {
 .preFooter-left div {
   margin: 40px 0;
   max-width: 350px; }
+  .preFooter-left div p {
+    line-height: 1.5; }
+  .preFooter-left div a {
+    display: block;
+    margin: 5px 0 0 0; }
+
+.preFooter-left div.blueSpan {
+  max-width: 400px; }
 
 .partners {
   max-width: 1400px;
@@ -674,7 +705,8 @@ a:hover .highlights-hover {
 
 .partners-gallery-cell {
   width: calc(16.6% - 10px);
-  margin: 0 5px; }
+  margin: 0 5px;
+  max-width: 150px; }
 
 @media all and (min-width: 1600px) {
   .headlineContainer {
@@ -719,7 +751,8 @@ a:hover .highlights-hover {
 
 @media all and (max-width: 767px) {
   .bigH1 {
-    padding: 0; }
+    padding: 0;
+    margin-right: 15px; }
   .bigH1 h1 {
     font-size: 7.5vw; }
   .bigH1 p {
@@ -751,25 +784,38 @@ a:hover .highlights-hover {
   .hero {
     -ms-flex-pack: center;
         justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    background: url("../assets/Family-mobile.jpg") center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    background: url("../assets/Family-mobile.jpg") left;
     background-size: cover; }
   .headlineContainer {
     margin: 0;
-    padding: 30px 7px;
-    height: auto; }
+    padding: 15px 7px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    .headlineContainer .headline-main {
+      padding: 20px 5px; }
+    .headlineContainer h1 {
+      font-size: 36px;
+      display: inline-block; }
+    .headlineContainer h2 {
+      font-size: 30px; }
+    .headlineContainer h4 {
+      font-size: 18px; }
   .headline-link-container {
     position: static;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-left: 15px; }
+    -ms-flex-align: center;
+        align-items: center; }
     .headline-link-container div {
       width: 65%; }
+    .headline-link-container .headline-link-title {
+      margin-bottom: 0; }
   .bigH1 {
-    padding-right: 5px; }
+    margin: 0 5px 0 0; }
   .bigH1 h1 {
     font-size: 7vw;
     margin-left: 5px;
@@ -806,6 +852,10 @@ a:hover .highlights-hover {
   .philanthropy-gallery-background {
     max-width: 200px;
     margin: 0 auto; }
+  .philanthropy-gallery-cell-header {
+    display: inline-block; }
+  .philanthropy-footer-text p {
+    font-size: 15px; }
   .impact-body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -817,7 +867,9 @@ a:hover .highlights-hover {
   .impactCell .impactCell-body {
     padding-right: 0; }
   .lion {
-    display: none; }
+    position: static;
+    margin: 0 auto;
+    float: left; }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px); }
   .highlights-container .highlights-cell .highlights-readmore {
@@ -832,17 +884,18 @@ a:hover .highlights-hover {
   .boardMessage-container div {
     width: 100%; }
     .boardMessage-container div .boardMessage-signature {
-      width: 50%;
-      display: inline; }
+      margin-left: auto; }
     .boardMessage-container div .boardMessage-signature:nth-of-type(1) {
       margin-right: 0; }
   .partners {
-    padding: 0; }
+    padding: 0;
+    width: 95%; }
   .partners-gallery {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .partners-gallery-cell {
-    width: calc(33.3% - 10px); }
+    width: calc(33.3% - 10px);
+    max-width: 100px; }
   .preFooter-right {
     display: none; }
   .preFooter-left {
@@ -857,5 +910,7 @@ a:hover .highlights-hover {
 @media all and (max-width: 400px) {
   .headline-main, .headline-link-container {
     padding: 0; }
-    .headline-main h1, .headline-link-container h1 {
-      font-size: 38px; } }
+    .headline-main h1, .headline-main h2, .headline-link-container h1, .headline-link-container h2 {
+      font-size: 26px; }
+  .headlineContainer h4 {
+    font-size: 16px; } }

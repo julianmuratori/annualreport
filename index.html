@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i,700i|Raleway:400,500,800" rel="stylesheet">
-	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="public/styles/featherlight.css">
-	<link rel="stylesheet" href="public/styles/style.css">
+	<!-- <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="./public/styles/featherlight.css">
+	<link rel="stylesheet" href="./public/styles/style.css">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 		<div class="hero flex">
 			<div class="headlineContainer">
 				<div>
-					<p>Philanthropy for a Strong Jewish Future</p>
+					<h4 class="noBold">Philanthropy for a Strong Jewish Future</h4>
 				</div>
 				<div class="headline-main">
 					<h1>JEWISH</h1>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="headline-link-container">
 					<div class="headline-link-title">
-						<p class="redSpan">ANNUAL REPORT</p>
+						<p class="spanBold redSpan">ANNUAL REPORT</p>
 					</div>
 					<div class="headline-link">
 						<a href="#two"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -41,8 +41,8 @@
 	<main>
 		<section id="two" class="textRight belowFold flex">
 			<div class="bigH1">
-				<div><h1>LIFE</h1></div>
-				<div><h1>IS BUILT</h1></div>
+				<div class="clearfix"><h1>LIFE</h1></div>
+				<div class="clearfix"><h1>IS BUILT</h1></div>
 				<div class="clearfix">
 					<div class="textFloat-Right">
 						<h1>ON</h1>
@@ -78,9 +78,9 @@
 
 		<!-- SINCE 1962 -->
 		<section class="since1962 textCenter">
-			<p class="innerWrapper since1962-header"><span>Since 1962<span></p>
+			<h4 class="innerWrapper since1962-header cursive"><span>Since 1962<span></h4>
 			<div class="innerWrapper since1962-narrow">
-				<p>Our years of experience and community history in Toronto give us the unique ability to provide you and your family with valuable tools, strategies, and expertise that make charitable giving thoughtful and creative.</p>
+				<p class="larger-line-height">Our years of experience and community history in Toronto give us the unique ability to provide you and your family with valuable tools, strategies, and expertise that make charitable giving thoughtful and creative.</p>
 			</div>
 			<div class="outerWrapper flex since1962-wide">
 				<div><h2 class="cursive">Find out what we can do together...</h2></div>
@@ -179,12 +179,12 @@
 						</div>
 						<div class="signature">
 							<img src="./public/assets/David_signature.png" alt="">
-							<p>DAVID MATLOW</p>
+							<p class="bold">DAVID MATLOW</p>
 							<p>CHAIR, JEWISH FOUNDATION</p>
 						</div>
 						<div class="signature">
 							<img src="./public/assets/ronit_signature.png" alt="">
-							<p>RONIT HOLTZMAN</p>
+							<p class="bold">RONIT HOLTZMAN</p>
 							<p>V.P., PLANNED GIVING & ENDOWMENTS</p>
 						</div>
 					</div>
@@ -210,30 +210,30 @@
 
 				<div class="byTheNumbers-container flex financialSummary-containerPadding">
 					<div class="byTheNumbers-threeCells  financialSummary-cellPadding leftCell">
-						<h3 class="lightBlueSpan">$35.4 MILLION</h3>
+						<h3 class="noBold lightBlueSpan">$35.4 MILLION</h3>
 						<p>TOTAL CONTRIBUTIONS</p>
 					</div>
 
 					<div class="byTheNumbers-threeCells financialSummary-cellPadding">
-						<h3 class="lightBlueSpan">$331.2 MILLION</h3>
+						<h3 class="noBold lightBlueSpan">$331.2 MILLION</h3>
 						<p>TOTAL ASSETS</p>
 						<p>(MARKET VALUE)</p>
 					</div>
 
 					<div class="byTheNumbers-threeCells financialSummary-cellPadding rightCell">
-						<h3 class="lightBlueSpan">10.2 PERCENT</h3>
+						<h3 class="noBold lightBlueSpan">10.2 PERCENT</h3>
 						<p>TOTAL INVESTMENT RETURN</p>
 					</div>
 				</div>
 
 				<div class="byTheNumbers-container flex">
 					<div class="financialSummary-twoCells financialSummary-cellPadding">
-						<h3 class="lightBlueSpan">$22.5 MILLION</h3>
+						<h3 class="noBold lightBlueSpan">$22.5 MILLION</h3>
 						<p>TOTAL GRANT DISTRIBUTIONS</p>
 					</div>
 
 					<div class="financialSummary-twoCells borderLeft financialSummary-cellPadding">
-						<h3 class="lightBlueSpan">$197.4 MILLION</h3>
+						<h3 class="noBold lightBlueSpan">$197.4 MILLION</h3>
 						<p>TOTAL PLANNED GIFTS</p>
 					</div>
 				</div>
@@ -255,32 +255,31 @@
 					<div class="philanthropy-gallery flex blueSpan">
 						<div class="philanthropy-gallery-cell">
 							<a href=""><div class="philanthropy-gallery-background background1"></div></a>
-							<div class="philanthropy-gallery-cell-header"><h6>TINA ERLICH</h6></div>
-							<h6 class="noBold">United Jewish Appeal has had a profound impact on my life and while my gift to the UJA Campaign addresses the needs of the community today, endowing my UJA gift will ensure the future is as bright as the present, so that my children along with others, can</h6>
-							<!-- <a href="#" class="redSpan bold">Read More</a> -->
+							<div class="philanthropy-gallery-cell-header"><img src="./public/assets/lion.png" alt="" class="tina"><h6>TINA ERLICH</h6></div>
+							<h6 class="noBold">United Jewish Appeal has had a profound impact on my life and while my gift to the UJA Campaign addresses the needs of the community today, endowing my UJA gift will ensure the future is as bright as the present, so that my children along with others, can have the same experiences I did, the ones that shaped me into the Jewish woman I am today.</h6>
 						</div>
 						<div class="philanthropy-gallery-cell">
 							<a href=""><div class="philanthropy-gallery-background background2"></div></a>
 							<div class="philanthropy-gallery-cell-header"><h6>HAROLD AND SHELLEY WOLKIN</h6></div>
-							<h6 class="noBold">The giving of our time and support has become an intrinsic part of our makeup, and we've been so well-educated by a succession of fabulous leaders who have stewarded our thinking that we feel UJA's support of all avenues by which we unite and life up our fellow</h6>
+							<h6 class="noBold">The giving of our time and support has become an intrinsic part of our makeup, and we've been so well-educated by a succession of fabulous leaders who have stewarded our thinking that we feel UJA's support of all avenues by which we unite and life up our fellow Jews is equally important, both here and in Israel.</h6>
 							<!-- <a href="#" class="redSpan bold">Read More</a> -->
 						</div>
 						<div class="philanthropy-gallery-cell">
 							<a href=""><div class="philanthropy-gallery-background background3"></div></a>
 							<div class="philanthropy-gallery-cell-header"><h6>SHAEL ROSENBAUM</h6></div>
-							<h6 class="noBold">The Toronto Jewish community enabled my grandparents to rebuild their lives, and my greates honour is providing others with the same opportunity by giving back. The Foundation ensures that this vibrant and diverse community of Jewish people will flourish for</h6>
+							<h6 class="noBold">The Toronto Jewish community enabled my grandparents to rebuild their lives, and my greates honour is providing others with the same opportunity by giving back. The Foundation ensures that this vibrant and diverse community of Jewish people will flourish for generations. Upholding values, goals and commitments can only be achieved when there is unity.</h6>
 							<!-- <a href="#" class="redSpan bold">Read More</a> -->
 						</div>
 						<div class="philanthropy-gallery-cell">
 							<a href=""><div class="philanthropy-gallery-background background4"></div></a>
 							<div class="philanthropy-gallery-cell-header"><h6>KOBY GOTTLIEB</h6></div>
-							<h6 class="noBold">Growing up in Toronto I have had the opportunity to benefit from a strong Jewish education. Through my education and my family's commitment to our community and to Israel, my love for Israel has grown. I am so fortunate to be able to have my bar mitzvah in Jerusalem</h6>
+							<h6 class="noBold">Growing up in Toronto I have had the opportunity to benefit from a strong Jewish education. Through my education and my family's commitment to our community and to Israel, my love for Israel has grown. I am so fortunate to be able to have my bar mitzvah in Jerusalem and through my Tzedakah Fund I want to ensure that kids living in Israel have access to the same opportunities and education that I am exposed to in Toronto.</h6>
 							<!-- <a href="#" class="redSpan bold">Read More</a> -->
 						</div>
 						<div class="philanthropy-gallery-cell">
 							<a href=""><div class="philanthropy-gallery-background background5"></div></a>
 							<div class="philanthropy-gallery-cell-header"><h6>SUSAN LAUFER AND BARRY GREENBERG</h6></div>
-							<h6 class="noBold">The interrelated principles of tzedakah and tikun olam, continued into the future, are vital to ensuring that future generations maintain balance in the world. If we all work together, we can make sure that thte scales don't just tip one way</h6>
+							<h6 class="noBold">The interrelated principles of tzedakah and tikun olam, continued into the future, are vital to ensuring that future generations maintain balance in the world. If we all work together, we can make sure that thte scales don't just tip one way.</h6>
 							<!-- <a href="#" class="redSpan bold">Read More</a> -->
 						</div>
 					</div>
@@ -288,18 +287,12 @@
 					<div class="philanthropy-footer flex">
 						<div class="philanthropy-footer-buttonContainer flex">
 							<a href="https://www.jewishfoundationtoronto.com/about-us/family-of-donors" class="philanthropyButton standardButton">ALL DONORS</a>
-							<!-- <div class="light" id="donors">
-								<ul>
-									<li>
-										<p>Hi</p>
-									</li>
-								</ul>
-							</div> -->
 							<h6 class="redSpan">For a full listing of donors, please click above.</h6>
-							<p class="blueSpan lion">A woman's Lion of Judah Endowment (LOJE) is established to endow a minimum $5,000 annual donation to United Jewish Appeal's Annual Campaign. This is accomplished by establishing an Endowment Fund or leaving a planned gift with a minimum $125,000 commitment.</p>
+							<h6 class="cursiveBold blueSpan">These are just some of the faces behind our family of donors that make our community one of the strongest and most successful Jewish communities in the Diaspora today. We gratefully acknowledge all of our donors for their generosity.</h6>
 						</div>
-						<div class="philanthropy-footer-text">
-							<p class="cursiveBold blueSpan">These are just some of the faces behind our family of donors that make our community one of the strongest and most successful Jewish communities in the Diaspora today. We gratefully acknowledge all of our donors for their generosity.</p>
+						<div class="philanthropy-footer-text clearfix">
+							<img src="./public/assets/lion.png" alt="" class="lion">
+							<p class="blueSpan">A woman's Lion of Judah Endowment (LOJE) is established to endow a minimum $5,000 annual donation to United Jewish Appeal's Annual Campaign. This is accomplished by establishing an Endowment Fund or leaving a planned gift with a minimum $125,000 commitment.</p>
 						</div>
 					</div>
 				</div>
@@ -373,9 +366,9 @@
 						<a href="#" data-featherlight="#legacy"><div class="highlights-readmore highlights-readmore1"><div class="highlights-hover"><h5 class="highlights-cell-h5">READ MORE</h5>
 							<div class="light" id="legacy">
 								<img src="./public/assets/legacy-gift-small.jpg" alt="">
-								<p>As part of UJA Federation’s historic centennial year, the Jewish Foundation is encouraging all UJA donors to consider making a UJA Legacy Gift.</p>
-								<p>“We are grateful to have had our philanthropic path paved by our parents and we are fortunate to be in a position to give back and carry on our legacy to the Jewish community by making a UJA Legacy Gift. Our involvement is inspired by the adage, ‘No one remembers what you did for yourself, but what you did for others’.”</p>
-								<p>David and Felicia Posluns</p>
+								<h6 class="noBold">As part of UJA Federation’s historic centennial year, the Jewish Foundation is encouraging all UJA donors to consider making a UJA Legacy Gift.</h6>
+								<h6 class="noBold">“We are grateful to have had our philanthropic path paved by our parents and we are fortunate to be in a position to give back and carry on our legacy to the Jewish community by making a UJA Legacy Gift. Our involvement is inspired by the adage, ‘No one remembers what you did for yourself, but what you did for others’.”</h6>
+								<h6 class="noBold">David and Felicia Posluns</h6>
 							</div>
 						</div>
 					</div>
@@ -386,7 +379,8 @@
 						<a href="#" data-featherlight="#teen"><div class="highlights-readmore highlights-readmore2"><div class="highlights-hover"><h5 class="highlights-cell-h5">READ MORE</h5>
 							<div class="light" id="teen">
 								<img src="./public/assets/teen-philanthropy.jpg" alt="">
-								<p>When the Jewish Foundation invests in our future that investment is not only financial, but in people, and most critically in our youth. In our B’nai Tzedek program, thirteen young people established a Fund at the Jewish Foundation in celebration of their Bar or Bat Mitzvahs. Joining the 200 others who previously did the same, these young people did a very adult thing: they shared their good fortune with others. In our Jewish Teen Board, 59 teenagers participated in a year-long program to actively engage in assessing the needs in our community. The program culminated with the participants making grants to a variety of organizations.</p>
+								<h6 class="noBold">When the Jewish Foundation invests in our future that investment is not only financial, but in people, and most critically in our youth. In our B’nai Tzedek program, thirteen young people established a Fund at the Jewish Foundation in celebration of their Bar or Bat Mitzvahs. Joining the 200 others who previously did the same, these young people did a very adult thing: they shared their good fortune with others.</h6>
+								<h6 class="noBold">In our Jewish Teen Board, 59 teenagers participated in a year-long program to actively engage in assessing the needs in our community. The program culminated with the participants making grants to a variety of organizations.</h6>
 							</div>
 						</div>
 					</div>
@@ -398,10 +392,10 @@
 							<h5 class="highlights-cell-h5">READ MORE</h5>
 							<div id="book-of-life" class="light">
 								<img src="./public/assets/book-of-life.jpg" alt="">
-								<p>Book Of lIfe</p>
-								<p>The Book of Life is a program dedicated to the celebration of Jewish lives and values through the inspiring stories of our donors who have left a charitable legacy for the future through the Jewish Foundation of Greater Toronto.</p>
-								<p>Under the leadership of Ruthie Ladovsky, the Jewish Foundation held its 14th Book of Life celebration in April 2017. Twenty-eight new stories were added to the Book of Life. Close to 500 people including family, friends and past honourees attended the event to thank the donors for their legacies.  Prince Hermann F. Leiningen told the story of his grandfather, King Boris III of Bulgaria, who helped save the country’s Jews from death during the Holocaust.</p>
-								<p>This year’s event also celebrated UJA Federation’s centennial year by recognizing legacies left to the community through the Jewish Foundation of Greater Toronto (then United Jewish Welfare Fund of Toronto). Special recognition was given to the very first bequest to the Jewish Foundation in 1937 from the late Henry Greismanz”l whose generous gift in his Will was used to build one of UJA Federation’s first buildings at 152 Beverley Street.</p>
+								<h6 class="noBold">Book Of lIfe</h6>
+								<h6 class="noBold">The Book of Life is a program dedicated to the celebration of Jewish lives and values through the inspiring stories of our donors who have left a charitable legacy for the future through the Jewish Foundation of Greater Toronto.</h6>
+								<h6 class="noBold">Under the leadership of Ruthie Ladovsky, the Jewish Foundation held its 14th Book of Life celebration in April 2017. Twenty-eight new stories were added to the Book of Life. Close to 500 people including family, friends and past honourees attended the event to thank the donors for their legacies.  Prince Hermann F. Leiningen told the story of his grandfather, King Boris III of Bulgaria, who helped save the country’s Jews from death during the Holocaust.</h6>
+								<h6 class="noBold">This year’s event also celebrated UJA Federation’s centennial year by recognizing legacies left to the community through the Jewish Foundation of Greater Toronto (then United Jewish Welfare Fund of Toronto). Special recognition was given to the very first bequest to the Jewish Foundation in 1937 from the late Henry Greismanz”l whose generous gift in his Will was used to build one of UJA Federation’s first buildings at 152 Beverley Street.</h6>
 							</div>
 						</div>
 					</div>
@@ -413,7 +407,7 @@
 							<h5 class="highlights-cell-h5">READ MORE</h5>
 							<div class="light" id="educational">
 								<img src="./public/assets/educational-seminars.jpg" alt="">
-								<p>Each year, the Jewish Foundation holds educational seminars on relevant tax, legal and estate planning topics for professional advisors, offering continuing educational credits and a forum for networking. This past year, two seminars were held; the first entitled: Current Issues in Real Estate and the second, Tax, Estate and Insurance Planning for the Elderly.</p>
+								<h6 class="noBold">Each year, the Jewish Foundation holds educational seminars on relevant tax, legal and estate planning topics for professional advisors, offering continuing educational credits and a forum for networking. This past year, two seminars were held; the first entitled: Current Issues in Real Estate and the second, Tax, Estate and Insurance Planning for the Elderly.</h6>
 							</div>
 						</div>
 					</div>
@@ -439,11 +433,11 @@
 						<p>Known for its creativity and cutting-edge philanthropic options, the Jewish Foundation continue - year after year - to match donors with their passions, allowing them to put their money where their heart is. In a community full of philanthropic choices, the Jewish Foundation, with its exceptional cadre of leaders and professionals, ensures that donors have access to a myriad of exciting and compelling charitable options, all designed to bring their philanthropic preferences to fruition.</p>
 						<p>On behalf of UJA Federation of Greater Toronto, we could not be prouder of the Jewish Foundation, and we are certain that the hundreds of programs and organizations that benefit from the Foundation will continue to do so for the next century.</p>
 						<div class="boardMessage-signature">
-							<p>BRUCE LEBOFF</p>
+							<p class="spanBold">BRUCE LEBOFF</p>
 							<p class="noBold">CHAIR OF THE BOARD</p>
 						</div>
 						<div class="boardMessage-signature">
-							<p>ADAM MINSKY</p>
+							<p class="spanBold">ADAM MINSKY</p>
 							<p class="noBold">PRESIDENT & CEO</p>
 						</div>
 					</div>
@@ -454,7 +448,7 @@
 			<section class="outerWrapper pre-footer flex">
 				<div class='preFooter-left'>
 					<div>
-						<p class="redSpan cursive">If you would like to discuss how the Jewish Foundation can help you achieve your philanthropic goals and leave a Legacy for generations to come, contact us.</p>
+						<p class="redSpan cursive cursiveBold">If you would like to discuss how the Jewish Foundation can help you achieve your philanthropic goals and leave a Legacy for generations to come, contact us.</p>
 					</div>
 					<div class="blueSpan">
 						<p>JEWISH FOUNDATION OF GREATER TORONTO</p>

@@ -74,6 +74,7 @@
 @media all and (max-width: 767px) {
   .bigH1 {
     padding: 0;
+    margin-right: 15px;
   }
   .bigH1 h1 {
     font-size: 7.5vw;
@@ -129,30 +130,56 @@
   // HERO
   .hero {
     justify-content: center;
-    align-items: center;
-    background: url('../assets/Family-mobile.jpg') center ;
+    align-items: flex-start;
+    background: url('../assets/Family-mobile.jpg') left;
     background-size: cover;
   }
   .headlineContainer {
     margin: 0;
-    padding: 30px 7px;
+    padding: 15px 7px;
     height: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    .headline-main {
+      padding: 20px 5px;
+    }
+
+    h1 {
+      font-size: 36px;
+      display: inline-block;
+      // float: left;
+    }
+    h2 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
   }
   .headline-link-container {
+    // width: 100%;
+    // top: 250px;
     position: static;
     display: flex;
-    flex-direction: column;
-    padding-left: 15px;
+    align-items: center;
+    // flex-direction: column;
+    // padding-left: 15px;
 
     div {
       width: 65%;
       // text-align: center;
     }
+    .headline-link-title {
+      margin-bottom: 0;
+    }
   }
 
   // BELOW FOLD
   .bigH1 {
-    padding-right: 5px;
+    margin: 0 5px 0 0;
   }
   .bigH1 h1 {
     font-size: 7vw;
@@ -210,6 +237,12 @@
     max-width: 200px;
     margin: 0 auto;
   }
+  .philanthropy-gallery-cell-header {
+    display: inline-block;
+  }
+  .philanthropy-footer-text p {
+    font-size: 15px;
+  }
 
   .impact-body {
     flex-wrap: wrap;
@@ -224,8 +257,14 @@
   .impactCell .impactCell-body {
     padding-right: 0;
   }
+  .tina {
+    // left: 50px;
+  }
   .lion {
-    display: none;
+    // display: none;
+    position: static;
+    margin: 0 auto;
+    float: left;
   }
   // HIGHLIGHTS OF THE YEAR
   .highlights-container .highlights-cell {
@@ -251,8 +290,7 @@
     width: 100%;
 
     .boardMessage-signature {
-      width: 50%;
-      display: inline;
+      margin-left: auto;
     }
     .boardMessage-signature:nth-of-type(1) {
       margin-right: 0;
@@ -260,14 +298,17 @@
   }
 
   // STRATEGIC PARTNERS
+
   .partners {
     padding: 0;
+    width: 95%;
   }
   .partners-gallery {
     flex-wrap: wrap;
   }
   .partners-gallery-cell {
     width: calc(33.3% - 10px);
+    max-width: 100px;
   }
   .preFooter-right {
     display: none;
@@ -291,8 +332,11 @@
     .headline-main, .headline-link-container {
       padding: 0;
 
-      h1 {
-        font-size: 38px;
+      h1, h2 {
+        font-size: 26px;
       }
+    }
+    .headlineContainer h4 {
+      font-size: 16px;
     }
   }
