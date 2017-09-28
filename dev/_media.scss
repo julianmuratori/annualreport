@@ -294,6 +294,9 @@
   .highlights {
     padding-bottom: 20px;
   }
+  .mobileOnly {
+    display: block;
+  }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px);
   }

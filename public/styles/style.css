@@ -256,7 +256,7 @@ h6 {
     background: #003a5d; }
 
 .featherlight .featherlight-content {
-  max-width: 500px;
+  max-width: 800px;
   background: #003a5d;
   color: white; }
 
@@ -493,8 +493,8 @@ h6 {
 
 .lion {
   position: absolute;
-  max-width: 75px;
-  left: -75px; }
+  max-width: 50px;
+  left: -50px; }
 
 .philanthropy-gallery-background {
   height: 200px;
@@ -521,7 +521,10 @@ h6 {
   background-size: cover; }
 
 .philanthropy-footer {
-  margin-top: 30px; }
+  margin-top: 100px; }
+
+.philanthropy-footer-lion {
+  margin-top: 20px; }
 
 .philanthropy-footer-buttonContainer {
   width: 80%;
@@ -534,7 +537,7 @@ h6 {
     margin-bottom: 15px; }
   .philanthropy-footer-buttonContainer p {
     margin-top: auto;
-    font-size: 16px; }
+    font-size: 12px; }
 
 .philanthropy-footer-text {
   width: 20%;
@@ -585,16 +588,21 @@ h6 {
 
 .impact-button {
   display: inline-block;
-  margin: 30px 0; }
+  margin: 80px 0 30px; }
 
 .impact-button-container {
   margin-top: 30px; }
+
+.mobileOnly {
+  margin: 20px 0;
+  display: none; }
 
 .highlights-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  padding-top: 30px; }
   .highlights-container .highlights-cell-h5 {
     margin-top: 15px;
     display: inline-block;
@@ -680,7 +688,7 @@ a:hover .highlights-hover {
     margin-right: 30px; }
 
 .preFooter-left, .preFooter-right {
-  margin: 40px 0;
+  margin: 40px 0 25px;
   width: 50%; }
 
 .preFooter-left div {
@@ -695,6 +703,10 @@ a:hover .highlights-hover {
 .preFooter-left div.blueSpan {
   max-width: 400px; }
 
+.preFooter-scrollBack {
+  text-align: center;
+  margin-bottom: 40px; }
+
 .partners {
   max-width: 1400px;
   margin: 0 auto 20px; }
@@ -703,7 +715,8 @@ a:hover .highlights-hover {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+  padding-top: 10px; }
 
 .partners-gallery-cell {
   width: calc(16.6% - 10px);
@@ -893,6 +906,8 @@ a:hover .highlights-hover {
     padding-right: 0; }
   .highlights {
     padding-bottom: 20px; }
+  .mobileOnly {
+    display: block; }
   .highlights-container .highlights-cell {
     width: calc(100% - 10px); }
   .highlights-container .highlights-cell .highlights-readmore {

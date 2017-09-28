@@ -135,7 +135,7 @@ body {
 // FEATHERLIGHT
 
 .featherlight .featherlight-content {
-  max-width: 500px;
+  max-width: 800px;
   background: $brandBlue;
   color: white;
 }
@@ -451,8 +451,8 @@ body {
   }
   .lion {
     position: absolute;
-    max-width: 75px;
-    left: -75px;
+    max-width: 50px;
+    left: -50px;
     // bottom: 0px;
   }
   .philanthropy-gallery-background {
@@ -481,7 +481,10 @@ body {
   }
 
   .philanthropy-footer {
-    margin-top: 30px;
+    margin-top: 100px;
+  }
+  .philanthropy-footer-lion {
+    margin-top: 20px;
   }
   .philanthropy-footer-buttonContainer {
     width: 80%;
@@ -497,7 +500,7 @@ body {
     }
     p {
       margin-top: auto;
-      font-size: 16px;
+      font-size: 12px;
     }
   }
   .philanthropy-footer-text {
@@ -562,7 +565,7 @@ body {
     }
     .impact-button {
       display: inline-block;
-      margin: 30px 0;
+      margin: 80px 0 30px;
     }
     .impact-button-container {
       margin-top: 30px;
@@ -573,9 +576,16 @@ body {
 
     // HIGHLIGHTS OF THE YEAR
 
+    .mobileOnly {
+      // display: none;
+      margin: 20px 0;
+      display: none;
+    }
+
   .highlights-container {
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 30px;
 
     .highlights-cell-h5 {
       margin-top: 15px;
@@ -694,7 +704,7 @@ body {
 
   // PRE-FOOTER
     .preFooter-left, .preFooter-right {
-    margin: 40px 0;
+    margin: 40px 0 25px;
     width: 50%;
   }
   .preFooter-left div {
@@ -713,6 +723,10 @@ body {
   .preFooter-left div.blueSpan {
     max-width: 400px;
   }
+  .preFooter-scrollBack {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
   // FOOTER
   .partners {
@@ -723,6 +737,7 @@ body {
   .partners-gallery {
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 10px;
 
   }
   .partners-gallery-cell {
