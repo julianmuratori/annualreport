@@ -6,6 +6,12 @@
   }
 }
 
+@media all and (max-width: 1600px) {
+  .headlineContainer {
+    margin: 0;
+  }
+}
+
 @media all and (min-width: 981px) and (max-width: 1300px) {
   .innerWrapper, .outerWrapper, .philanthropyWrapper {
     padding: 10px;
@@ -18,9 +24,13 @@
 
   // HERO
   .headlineContainer {
-    margin: 0 150px;
+    padding: 30px 10px;
+    max-height: 400px;
   }
 
+  .headline-main {
+    padding: 10px 0;
+  }
   .lion {
     // display: none;
     position: static;
@@ -36,9 +46,9 @@
 @media all and (max-width: 980px) {
 
   // HERO
-  .headlineContainer {
-    margin-left: 50px;
-  }
+  // .headlineContainer {
+  //   margin-left: 50px;
+  // }
 
   // BELOW FOLD
 

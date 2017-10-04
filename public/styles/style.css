@@ -230,6 +230,9 @@ h5 {
 h6 {
   font-size: 16px; }
 
+.openSpan {
+  font-family: "Open Sans", sans-serif; }
+
 .textRight {
   text-align: right; }
 
@@ -704,7 +707,7 @@ a:hover .highlights-hover {
   max-width: 400px; }
 
 .preFooter-scrollBack {
-  text-align: center;
+  text-align: right;
   margin-bottom: 40px; }
 
 .partners {
@@ -714,8 +717,8 @@ a:hover .highlights-hover {
 .partners-gallery {
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 10px; }
 
 .partners-gallery-cell {
@@ -727,21 +730,26 @@ a:hover .highlights-hover {
   .headlineContainer {
     margin: 0 380px; } }
 
+@media all and (max-width: 1600px) {
+  .headlineContainer {
+    margin: 0; } }
+
 @media all and (min-width: 981px) and (max-width: 1300px) {
   .innerWrapper, .outerWrapper, .philanthropyWrapper {
     padding: 10px; } }
 
 @media all and (max-width: 1200px) {
   .headlineContainer {
-    margin: 0 150px; }
+    padding: 30px 10px;
+    max-height: 400px; }
+  .headline-main {
+    padding: 10px 0; }
   .lion {
     position: static;
     margin: 0 auto;
     float: left; } }
 
 @media all and (max-width: 980px) {
-  .headlineContainer {
-    margin-left: 50px; }
   .innerWrapper, .outerWrapper, .philanthropyWrapper {
     width: 95%; }
   .bigH1 {

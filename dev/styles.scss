@@ -12,6 +12,7 @@ $brandBlue: rgb(0, 58, 93);
 $brandLightBlue: rgb(169, 235, 235);
 $Raleway: 'Raleway', sans-serif;
 $Droid: 'Droid Serif', serif;
+$OpenSans: 'Open Sans', sans-serif;
 
 img {
   width: 100%;
@@ -95,6 +96,9 @@ body {
 
   h6 {
     font-size: 16px;
+  }
+  .openSpan {
+    font-family: $OpenSans;
   }
 
 // CATCH ALL CLASSES
@@ -724,7 +728,7 @@ body {
     max-width: 400px;
   }
   .preFooter-scrollBack {
-    text-align: center;
+    text-align: right;
     margin-bottom: 40px;
   }
 
@@ -736,7 +740,7 @@ body {
   }
   .partners-gallery {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 10px;
 
   }
